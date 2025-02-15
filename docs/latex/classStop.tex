@@ -1,5 +1,5 @@
-\hypertarget{classStop}{}\doxysection{Stop Class Reference}
-\label{classStop}\index{Stop@{Stop}}
+\doxysection{Stop Class Reference}
+\hypertarget{classStop}{}\label{classStop}\index{Stop@{Stop}}
 
 
 Represents a stop in the GTFS data.  
@@ -29,7 +29,7 @@ Collaboration diagram for Stop\+:
 \includegraphics[width=153pt]{classStop__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classStop_aab46de432c9377d34bf235e17aacc8a7}{add\+Stop\+Time\+Key}} (const std\+::pair$<$ std\+::string, std\+::string $>$ \&stop\+\_\+time\+\_\+key)
@@ -46,32 +46,48 @@ const std\+::unordered\+\_\+map$<$ std\+::string, int $>$ \& \mbox{\hyperlink{cl
 \begin{DoxyCompactList}\small\item\em Retrieves the map of footpaths. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classStop_a068a96b271b4c1692fba346a4baec607}{sort\+Stop\+Times}} (const std\+::function$<$ bool(const std\+::pair$<$ std\+::string, std\+::string $>$ \&, const std\+::pair$<$ std\+::string, std\+::string $>$ \&)$>$ \&comparator)
 \begin{DoxyCompactList}\small\item\em Sorts the stop times using a custom comparator. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classGTFSObject}{GTFSObject}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classStop_a36fa5daa186fd9257c4d69de302239b0}\label{classStop_a36fa5daa186fd9257c4d69de302239b0}} 
-std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \mbox{\hyperlink{classStop_a36fa5daa186fd9257c4d69de302239b0}{stop\+\_\+times\+\_\+keys}}
+void \mbox{\hyperlink{classGTFSObject_ac9126c5d79ccabb9a218d73a0b9545cc}{set\+Field}} (const std\+::string \&field, const std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Sets the value of a field. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classGTFSObject_aa6250e6a26877f7d2e274dc68c2e83b9}{get\+Field}} (const std\+::string \&field) const
+\begin{DoxyCompactList}\small\item\em Retrieves the value of a field. \end{DoxyCompactList}\item 
+const std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ \& \mbox{\hyperlink{classGTFSObject_a5185c3aafc51db980961b2a42d027fb7}{get\+Fields}} () const
+\begin{DoxyCompactList}\small\item\em Gets all fields as an unordered map. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGTFSObject_ac8fb8aa2e4fd4e443e7bbdc9fd6026b3}{has\+Field}} (const std\+::string \&field) const
+\begin{DoxyCompactList}\small\item\em Checks if a field exists. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classStop_a36fa5daa186fd9257c4d69de302239b0}\label{classStop_a36fa5daa186fd9257c4d69de302239b0} 
+std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ {\bfseries stop\+\_\+times\+\_\+keys}
 \begin{DoxyCompactList}\small\item\em Vector of stop-\/time keys, sorted by earliest departure time. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classStop_a292359b5af602e5267b1facde161b5b0}\label{classStop_a292359b5af602e5267b1facde161b5b0}} 
-std\+::unordered\+\_\+set$<$ std\+::pair$<$ std\+::string, std\+::string $>$, \mbox{\hyperlink{structpair__hash}{pair\+\_\+hash}} $>$ \mbox{\hyperlink{classStop_a292359b5af602e5267b1facde161b5b0}{routes\+\_\+keys}}
+\Hypertarget{classStop_a292359b5af602e5267b1facde161b5b0}\label{classStop_a292359b5af602e5267b1facde161b5b0} 
+std\+::unordered\+\_\+set$<$ std\+::pair$<$ std\+::string, std\+::string $>$, \mbox{\hyperlink{structpair__hash}{pair\+\_\+hash}} $>$ {\bfseries routes\+\_\+keys}
 \begin{DoxyCompactList}\small\item\em Set of route keys. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classStop_a0e52e37e70d866289d8b96255bb8fdab}\label{classStop_a0e52e37e70d866289d8b96255bb8fdab}} 
-std\+::unordered\+\_\+map$<$ std\+::string, int $>$ \mbox{\hyperlink{classStop_a0e52e37e70d866289d8b96255bb8fdab}{footpaths}}
+\Hypertarget{classStop_a0e52e37e70d866289d8b96255bb8fdab}\label{classStop_a0e52e37e70d866289d8b96255bb8fdab} 
+std\+::unordered\+\_\+map$<$ std\+::string, int $>$ {\bfseries footpaths}
 \begin{DoxyCompactList}\small\item\em Map of footpaths to other stops. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classGTFSObject}{GTFSObject}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ {\bfseries fields}
+\begin{DoxyCompactList}\small\item\em Map of field names and values. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Represents a stop in the GTFS data. 
 
-This class inherits from \mbox{\hyperlink{classGTFSObject}{GTFSObject}} and manages stop time and route information for a specific stop. It provides methods for adding stop time and route IDs, retrieving sorted data, and defining custom sorting mechanisms. 
+This class inherits from \doxylink{classGTFSObject}{GTFSObject} and manages stop time and route information for a specific stop. It provides methods for adding stop time and route IDs, retrieving sorted data, and defining custom sorting mechanisms. 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classStop_a3a166f19caafebc08611581bf6d68db5}\label{classStop_a3a166f19caafebc08611581bf6d68db5}} 
-\index{Stop@{Stop}!addFootpath@{addFootpath}}
+\Hypertarget{classStop_a3a166f19caafebc08611581bf6d68db5}\index{Stop@{Stop}!addFootpath@{addFootpath}}
 \index{addFootpath@{addFootpath}!Stop@{Stop}}
 \doxysubsubsection{\texorpdfstring{addFootpath()}{addFootpath()}}
-{\footnotesize\ttfamily void Stop\+::add\+Footpath (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{other\+\_\+id,  }\item[{int \&}]{duration }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classStop_a3a166f19caafebc08611581bf6d68db5} 
+void Stop\+::add\+Footpath (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{other\+\_\+id}{, }\item[{int \&}]{duration}{}\end{DoxyParamCaption})}
 
 
 
@@ -84,11 +100,11 @@ Adds a footpath to another stop.
 {\em duration} & The duration of the footpath in seconds. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classStop_a3f65349f6c778283698da84e25fe4f75}\label{classStop_a3f65349f6c778283698da84e25fe4f75}} 
-\index{Stop@{Stop}!addRouteKey@{addRouteKey}}
+\Hypertarget{classStop_a3f65349f6c778283698da84e25fe4f75}\index{Stop@{Stop}!addRouteKey@{addRouteKey}}
 \index{addRouteKey@{addRouteKey}!Stop@{Stop}}
 \doxysubsubsection{\texorpdfstring{addRouteKey()}{addRouteKey()}}
-{\footnotesize\ttfamily void Stop\+::add\+Route\+Key (\begin{DoxyParamCaption}\item[{const std\+::pair$<$ std\+::string, std\+::string $>$ \&}]{route\+\_\+key }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classStop_a3f65349f6c778283698da84e25fe4f75} 
+void Stop\+::add\+Route\+Key (\begin{DoxyParamCaption}\item[{const std\+::pair$<$ std\+::string, std\+::string $>$ \&}]{route\+\_\+key}{}\end{DoxyParamCaption})}
 
 
 
@@ -99,11 +115,11 @@ Adds a route key (route\+\_\+id, direction\+\_\+id) to the stop.
 {\em route\+\_\+key} & A pair representing the route key. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classStop_aab46de432c9377d34bf235e17aacc8a7}\label{classStop_aab46de432c9377d34bf235e17aacc8a7}} 
-\index{Stop@{Stop}!addStopTimeKey@{addStopTimeKey}}
+\Hypertarget{classStop_aab46de432c9377d34bf235e17aacc8a7}\index{Stop@{Stop}!addStopTimeKey@{addStopTimeKey}}
 \index{addStopTimeKey@{addStopTimeKey}!Stop@{Stop}}
 \doxysubsubsection{\texorpdfstring{addStopTimeKey()}{addStopTimeKey()}}
-{\footnotesize\ttfamily void Stop\+::add\+Stop\+Time\+Key (\begin{DoxyParamCaption}\item[{const std\+::pair$<$ std\+::string, std\+::string $>$ \&}]{stop\+\_\+time\+\_\+key }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classStop_aab46de432c9377d34bf235e17aacc8a7} 
+void Stop\+::add\+Stop\+Time\+Key (\begin{DoxyParamCaption}\item[{const std\+::pair$<$ std\+::string, std\+::string $>$ \&}]{stop\+\_\+time\+\_\+key}{}\end{DoxyParamCaption})}
 
 
 
@@ -114,11 +130,11 @@ Adds a stop-\/time key (trip\+\_\+id, stop\+\_\+id) to the stop.
 {\em stop\+\_\+time\+\_\+key} & A pair representing the stop-\/time key. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classStop_a19d3992f721164dba77906b406c8c6ff}\label{classStop_a19d3992f721164dba77906b406c8c6ff}} 
-\index{Stop@{Stop}!getFootpaths@{getFootpaths}}
+\Hypertarget{classStop_a19d3992f721164dba77906b406c8c6ff}\index{Stop@{Stop}!getFootpaths@{getFootpaths}}
 \index{getFootpaths@{getFootpaths}!Stop@{Stop}}
 \doxysubsubsection{\texorpdfstring{getFootpaths()}{getFootpaths()}}
-{\footnotesize\ttfamily const std\+::unordered\+\_\+map$<$ std\+::string, int $>$ \& Stop\+::get\+Footpaths (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classStop_a19d3992f721164dba77906b406c8c6ff} 
+const std\+::unordered\+\_\+map$<$ std\+::string, int $>$ \& Stop\+::get\+Footpaths (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -127,11 +143,11 @@ Retrieves the map of footpaths.
 \begin{DoxyReturn}{Returns}
 A constant reference to the map of footpaths. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classStop_acbc00c04cd2ca64be7b03e0340f11697}\label{classStop_acbc00c04cd2ca64be7b03e0340f11697}} 
-\index{Stop@{Stop}!getRouteKeys@{getRouteKeys}}
+\Hypertarget{classStop_acbc00c04cd2ca64be7b03e0340f11697}\index{Stop@{Stop}!getRouteKeys@{getRouteKeys}}
 \index{getRouteKeys@{getRouteKeys}!Stop@{Stop}}
 \doxysubsubsection{\texorpdfstring{getRouteKeys()}{getRouteKeys()}}
-{\footnotesize\ttfamily const std\+::unordered\+\_\+set$<$ std\+::pair$<$ std\+::string, std\+::string $>$, \mbox{\hyperlink{structpair__hash}{pair\+\_\+hash}} $>$ \& Stop\+::get\+Route\+Keys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classStop_acbc00c04cd2ca64be7b03e0340f11697} 
+const std\+::unordered\+\_\+set$<$ std\+::pair$<$ std\+::string, std\+::string $>$, \mbox{\hyperlink{structpair__hash}{pair\+\_\+hash}} $>$ \& Stop\+::get\+Route\+Keys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -140,11 +156,11 @@ Retrieves the set of route keys.
 \begin{DoxyReturn}{Returns}
 A constant reference to the unordered set of route keys. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classStop_ac6a333f6382415d1050902c74c6de69c}\label{classStop_ac6a333f6382415d1050902c74c6de69c}} 
-\index{Stop@{Stop}!getStopTimesKeys@{getStopTimesKeys}}
+\Hypertarget{classStop_ac6a333f6382415d1050902c74c6de69c}\index{Stop@{Stop}!getStopTimesKeys@{getStopTimesKeys}}
 \index{getStopTimesKeys@{getStopTimesKeys}!Stop@{Stop}}
 \doxysubsubsection{\texorpdfstring{getStopTimesKeys()}{getStopTimesKeys()}}
-{\footnotesize\ttfamily const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \& Stop\+::get\+Stop\+Times\+Keys (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classStop_ac6a333f6382415d1050902c74c6de69c} 
+const std\+::vector$<$ std\+::pair$<$ std\+::string, std\+::string $>$ $>$ \& Stop\+::get\+Stop\+Times\+Keys (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -153,11 +169,11 @@ Retrieves the list of stop-\/time keys.
 \begin{DoxyReturn}{Returns}
 A constant reference to the vector of stop-\/time keys. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classStop_a068a96b271b4c1692fba346a4baec607}\label{classStop_a068a96b271b4c1692fba346a4baec607}} 
-\index{Stop@{Stop}!sortStopTimes@{sortStopTimes}}
+\Hypertarget{classStop_a068a96b271b4c1692fba346a4baec607}\index{Stop@{Stop}!sortStopTimes@{sortStopTimes}}
 \index{sortStopTimes@{sortStopTimes}!Stop@{Stop}}
 \doxysubsubsection{\texorpdfstring{sortStopTimes()}{sortStopTimes()}}
-{\footnotesize\ttfamily void Stop\+::sort\+Stop\+Times (\begin{DoxyParamCaption}\item[{const std\+::function$<$ bool(const std\+::pair$<$ std\+::string, std\+::string $>$ \&, const std\+::pair$<$ std\+::string, std\+::string $>$ \&)$>$ \&}]{comparator }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classStop_a068a96b271b4c1692fba346a4baec607} 
+void Stop\+::sort\+Stop\+Times (\begin{DoxyParamCaption}\item[{const std\+::function$<$ bool(const std\+::pair$<$ std\+::string, std\+::string $>$ \&, const std\+::pair$<$ std\+::string, std\+::string $>$ \&)$>$ \&}]{comparator}{}\end{DoxyParamCaption})}
 
 
 

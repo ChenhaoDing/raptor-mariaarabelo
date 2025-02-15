@@ -1,5 +1,5 @@
-\hypertarget{classStopTime}{}\doxysection{Stop\+Time Class Reference}
-\label{classStopTime}\index{StopTime@{StopTime}}
+\doxysection{Stop\+Time Class Reference}
+\hypertarget{classStopTime}{}\label{classStopTime}\index{StopTime@{StopTime}}
 
 
 Represents a stop time in the GTFS data.  
@@ -29,7 +29,7 @@ Collaboration diagram for Stop\+Time\+:
 \includegraphics[width=153pt]{classStopTime__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Member Functions}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 void \mbox{\hyperlink{classStopTime_a8a339d712b1d0302a6959c21e9c57e93}{set\+Arrival\+Seconds}} (int seconds)
@@ -40,29 +40,45 @@ int \mbox{\hyperlink{classStopTime_a62d08a24da4f20a1ddc6205482ee505b}{get\+Arriv
 \begin{DoxyCompactList}\small\item\em Retrieves the arrival time in seconds. \end{DoxyCompactList}\item 
 int \mbox{\hyperlink{classStopTime_af2ceb440c89d18683741193eb6e02718}{get\+Departure\+Seconds}} () const
 \begin{DoxyCompactList}\small\item\em Retrieves the departure time in seconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classGTFSObject}{GTFSObject}}}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classStopTime_aecc828fb1d71cced04c093bf1fcee42e}\label{classStopTime_aecc828fb1d71cced04c093bf1fcee42e}} 
-int \mbox{\hyperlink{classStopTime_aecc828fb1d71cced04c093bf1fcee42e}{arrival\+\_\+seconds}} \{\}
+void \mbox{\hyperlink{classGTFSObject_ac9126c5d79ccabb9a218d73a0b9545cc}{set\+Field}} (const std\+::string \&field, const std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Sets the value of a field. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classGTFSObject_aa6250e6a26877f7d2e274dc68c2e83b9}{get\+Field}} (const std\+::string \&field) const
+\begin{DoxyCompactList}\small\item\em Retrieves the value of a field. \end{DoxyCompactList}\item 
+const std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ \& \mbox{\hyperlink{classGTFSObject_a5185c3aafc51db980961b2a42d027fb7}{get\+Fields}} () const
+\begin{DoxyCompactList}\small\item\em Gets all fields as an unordered map. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGTFSObject_ac8fb8aa2e4fd4e443e7bbdc9fd6026b3}{has\+Field}} (const std\+::string \&field) const
+\begin{DoxyCompactList}\small\item\em Checks if a field exists. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classStopTime_aecc828fb1d71cced04c093bf1fcee42e}\label{classStopTime_aecc828fb1d71cced04c093bf1fcee42e} 
+int {\bfseries arrival\+\_\+seconds} \{\}
 \begin{DoxyCompactList}\small\item\em Arrival time in seconds from midnight. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classStopTime_abf093e6811aa7ebfe95ca211eb4c3a42}\label{classStopTime_abf093e6811aa7ebfe95ca211eb4c3a42}} 
-int \mbox{\hyperlink{classStopTime_abf093e6811aa7ebfe95ca211eb4c3a42}{departure\+\_\+seconds}} \{\}
+\Hypertarget{classStopTime_abf093e6811aa7ebfe95ca211eb4c3a42}\label{classStopTime_abf093e6811aa7ebfe95ca211eb4c3a42} 
+int {\bfseries departure\+\_\+seconds} \{\}
 \begin{DoxyCompactList}\small\item\em Departure time in seconds from midnight. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classGTFSObject}{GTFSObject}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ {\bfseries fields}
+\begin{DoxyCompactList}\small\item\em Map of field names and values. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Represents a stop time in the GTFS data. 
 
-This class inherits from \mbox{\hyperlink{classGTFSObject}{GTFSObject}} and manages arrival and departure times for a specific stop. It provides methods for setting and getting arrival and departure times. 
+This class inherits from \doxylink{classGTFSObject}{GTFSObject} and manages arrival and departure times for a specific stop. It provides methods for setting and getting arrival and departure times. 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classStopTime_a62d08a24da4f20a1ddc6205482ee505b}\label{classStopTime_a62d08a24da4f20a1ddc6205482ee505b}} 
-\index{StopTime@{StopTime}!getArrivalSeconds@{getArrivalSeconds}}
+\Hypertarget{classStopTime_a62d08a24da4f20a1ddc6205482ee505b}\index{StopTime@{StopTime}!getArrivalSeconds@{getArrivalSeconds}}
 \index{getArrivalSeconds@{getArrivalSeconds}!StopTime@{StopTime}}
 \doxysubsubsection{\texorpdfstring{getArrivalSeconds()}{getArrivalSeconds()}}
-{\footnotesize\ttfamily int Stop\+Time\+::get\+Arrival\+Seconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classStopTime_a62d08a24da4f20a1ddc6205482ee505b} 
+int Stop\+Time\+::get\+Arrival\+Seconds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -71,11 +87,11 @@ Retrieves the arrival time in seconds.
 \begin{DoxyReturn}{Returns}
 The arrival time in seconds. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classStopTime_af2ceb440c89d18683741193eb6e02718}\label{classStopTime_af2ceb440c89d18683741193eb6e02718}} 
-\index{StopTime@{StopTime}!getDepartureSeconds@{getDepartureSeconds}}
+\Hypertarget{classStopTime_af2ceb440c89d18683741193eb6e02718}\index{StopTime@{StopTime}!getDepartureSeconds@{getDepartureSeconds}}
 \index{getDepartureSeconds@{getDepartureSeconds}!StopTime@{StopTime}}
 \doxysubsubsection{\texorpdfstring{getDepartureSeconds()}{getDepartureSeconds()}}
-{\footnotesize\ttfamily int Stop\+Time\+::get\+Departure\+Seconds (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+{\footnotesize\ttfamily \label{classStopTime_af2ceb440c89d18683741193eb6e02718} 
+int Stop\+Time\+::get\+Departure\+Seconds (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const}
 
 
 
@@ -84,11 +100,11 @@ Retrieves the departure time in seconds.
 \begin{DoxyReturn}{Returns}
 The departure time in seconds. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classStopTime_a8a339d712b1d0302a6959c21e9c57e93}\label{classStopTime_a8a339d712b1d0302a6959c21e9c57e93}} 
-\index{StopTime@{StopTime}!setArrivalSeconds@{setArrivalSeconds}}
+\Hypertarget{classStopTime_a8a339d712b1d0302a6959c21e9c57e93}\index{StopTime@{StopTime}!setArrivalSeconds@{setArrivalSeconds}}
 \index{setArrivalSeconds@{setArrivalSeconds}!StopTime@{StopTime}}
 \doxysubsubsection{\texorpdfstring{setArrivalSeconds()}{setArrivalSeconds()}}
-{\footnotesize\ttfamily void Stop\+Time\+::set\+Arrival\+Seconds (\begin{DoxyParamCaption}\item[{int}]{seconds }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classStopTime_a8a339d712b1d0302a6959c21e9c57e93} 
+void Stop\+Time\+::set\+Arrival\+Seconds (\begin{DoxyParamCaption}\item[{int}]{seconds}{}\end{DoxyParamCaption})}
 
 
 
@@ -99,11 +115,11 @@ Sets the arrival time in seconds.
 {\em seconds} & The arrival time in seconds. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classStopTime_a61736ae41745596fbb8544494896038d}\label{classStopTime_a61736ae41745596fbb8544494896038d}} 
-\index{StopTime@{StopTime}!setDepartureSeconds@{setDepartureSeconds}}
+\Hypertarget{classStopTime_a61736ae41745596fbb8544494896038d}\index{StopTime@{StopTime}!setDepartureSeconds@{setDepartureSeconds}}
 \index{setDepartureSeconds@{setDepartureSeconds}!StopTime@{StopTime}}
 \doxysubsubsection{\texorpdfstring{setDepartureSeconds()}{setDepartureSeconds()}}
-{\footnotesize\ttfamily void Stop\+Time\+::set\+Departure\+Seconds (\begin{DoxyParamCaption}\item[{int}]{seconds }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classStopTime_a61736ae41745596fbb8544494896038d} 
+void Stop\+Time\+::set\+Departure\+Seconds (\begin{DoxyParamCaption}\item[{int}]{seconds}{}\end{DoxyParamCaption})}
 
 
 

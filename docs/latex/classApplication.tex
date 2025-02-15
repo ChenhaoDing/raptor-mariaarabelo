@@ -1,5 +1,5 @@
-\hypertarget{classApplication}{}\doxysection{Application Class Reference}
-\label{classApplication}\index{Application@{Application}}
+\doxysection{Application Class Reference}
+\hypertarget{classApplication}{}\label{classApplication}\index{Application@{Application}}
 
 
 The main application class for managing the RAPTOR transit algorithm.  
@@ -9,22 +9,22 @@ The main application class for managing the RAPTOR transit algorithm.
 
 {\ttfamily \#include $<$Application.\+h$>$}
 
-\doxysubsection*{Public Member Functions}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classApplication_aa28d891eaa9a64f4c39a2d92f1430e7f}{Application}} (std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classApplication_a08a31b167a087b816d6b5b06a27e5b7e}{input\+Directories}})
-\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{classApplication}{Application}} instance with the given input directories. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classApplication_a68965449404743bf1add056784d6cf81}\label{classApplication_a68965449404743bf1add056784d6cf81}} 
-void \mbox{\hyperlink{classApplication_a68965449404743bf1add056784d6cf81}{run}} ()
+\begin{DoxyCompactList}\small\item\em Constructs an \doxylink{classApplication}{Application} instance with the given input directories. \end{DoxyCompactList}\item 
+\Hypertarget{classApplication_a68965449404743bf1add056784d6cf81}\label{classApplication_a68965449404743bf1add056784d6cf81} 
+void {\bfseries run} ()
 \begin{DoxyCompactList}\small\item\em Starts the application, providing a command-\/line interface for users. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Member Functions}
+\doxysubsubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classApplication_a3ee47303437f6499aa0ee4e66539bdd0}\label{classApplication_a3ee47303437f6499aa0ee4e66539bdd0}} 
-void \mbox{\hyperlink{classApplication_a3ee47303437f6499aa0ee4e66539bdd0}{initialize\+Raptor}} ()
+\Hypertarget{classApplication_a3ee47303437f6499aa0ee4e66539bdd0}\label{classApplication_a3ee47303437f6499aa0ee4e66539bdd0} 
+void {\bfseries initialize\+Raptor} ()
 \begin{DoxyCompactList}\small\item\em Initializes the RAPTOR data structures by parsing input files. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classApplication_a873174e413a8bd83cb7477874fdf1273}\label{classApplication_a873174e413a8bd83cb7477874fdf1273}} 
-void \mbox{\hyperlink{classApplication_a873174e413a8bd83cb7477874fdf1273}{handle\+Query}} ()
+\Hypertarget{classApplication_a873174e413a8bd83cb7477874fdf1273}\label{classApplication_a873174e413a8bd83cb7477874fdf1273} 
+void {\bfseries handle\+Query} ()
 \begin{DoxyCompactList}\small\item\em Handles a user query by executing the RAPTOR algorithm and displaying results. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{structQuery}{Query}} \mbox{\hyperlink{classApplication_a6a6b3c6eff67d5e974db574d21c50078}{get\+Query}} ()
 \begin{DoxyCompactList}\small\item\em Retrieves a query from the user, including source, target, date, and time. \end{DoxyCompactList}\item 
@@ -32,11 +32,11 @@ std\+::string \mbox{\hyperlink{classApplication_a1f46bbc2467222352e6982d03d3c08a
 \begin{DoxyCompactList}\small\item\em Prompts the user to enter the source stop ID. \end{DoxyCompactList}\item 
 std\+::string \mbox{\hyperlink{classApplication_aed1a74f67ca7f5be40a99ec91c56db92}{get\+Target}} ()
 \begin{DoxyCompactList}\small\item\em Prompts the user to enter the target stop ID. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Static Private Member Functions}
+\doxysubsubsection*{Static Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classApplication_ab3070ce68cc65d5907661559985ccaf7}\label{classApplication_ab3070ce68cc65d5907661559985ccaf7}} 
-static void \mbox{\hyperlink{classApplication_ab3070ce68cc65d5907661559985ccaf7}{show\+Commands}} ()
+\Hypertarget{classApplication_ab3070ce68cc65d5907661559985ccaf7}\label{classApplication_ab3070ce68cc65d5907661559985ccaf7} 
+static void {\bfseries show\+Commands} ()
 \begin{DoxyCompactList}\small\item\em Displays the list of available commands to the user. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{structDate}{Date}} \mbox{\hyperlink{classApplication_a21d7db920a5e16fbf1ca9e334e2aff2f}{get\+Date}} ()
 \begin{DoxyCompactList}\small\item\em Prompts the user to enter the journey date. \end{DoxyCompactList}\item 
@@ -52,14 +52,14 @@ static int \mbox{\hyperlink{classApplication_a4f084013adf7f8d94c9846bdd18b09de}{
 \begin{DoxyCompactList}\small\item\em Prompts the user to enter the hour component of the departure time. \end{DoxyCompactList}\item 
 static int \mbox{\hyperlink{classApplication_af7d7cc6698adaf407a6050c8e56e5129}{get\+Minutes}} ()
 \begin{DoxyCompactList}\small\item\em Prompts the user to enter the minutes component of the departure time. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+\doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classApplication_a08a31b167a087b816d6b5b06a27e5b7e}\label{classApplication_a08a31b167a087b816d6b5b06a27e5b7e}} 
-std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classApplication_a08a31b167a087b816d6b5b06a27e5b7e}{input\+Directories}}
+\Hypertarget{classApplication_a08a31b167a087b816d6b5b06a27e5b7e}\label{classApplication_a08a31b167a087b816d6b5b06a27e5b7e} 
+std\+::vector$<$ std\+::string $>$ {\bfseries input\+Directories}
 \begin{DoxyCompactList}\small\item\em Directories containing transit data files. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classApplication_a3ebc5f873417cca723ec08c8c2daadbe}\label{classApplication_a3ebc5f873417cca723ec08c8c2daadbe}} 
-std\+::optional$<$ \mbox{\hyperlink{classRaptor}{Raptor}} $>$ \mbox{\hyperlink{classApplication_a3ebc5f873417cca723ec08c8c2daadbe}{raptor\+\_\+}}
+\Hypertarget{classApplication_a3ebc5f873417cca723ec08c8c2daadbe}\label{classApplication_a3ebc5f873417cca723ec08c8c2daadbe} 
+std\+::optional$<$ \mbox{\hyperlink{classRaptor}{Raptor}} $>$ {\bfseries raptor\+\_\+}
 \begin{DoxyCompactList}\small\item\em Optional instance of the RAPTOR algorithm. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
@@ -69,15 +69,15 @@ The main application class for managing the RAPTOR transit algorithm.
 This class provides methods to initialize data structures, handle user input, and execute the RAPTOR algorithm for transit planning. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classApplication_aa28d891eaa9a64f4c39a2d92f1430e7f}\label{classApplication_aa28d891eaa9a64f4c39a2d92f1430e7f}} 
-\index{Application@{Application}!Application@{Application}}
+\Hypertarget{classApplication_aa28d891eaa9a64f4c39a2d92f1430e7f}\index{Application@{Application}!Application@{Application}}
 \index{Application@{Application}!Application@{Application}}
 \doxysubsubsection{\texorpdfstring{Application()}{Application()}}
-{\footnotesize\ttfamily Application\+::\+Application (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{input\+Directories }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily \label{classApplication_aa28d891eaa9a64f4c39a2d92f1430e7f} 
+Application\+::\+Application (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{input\+Directories}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
-Constructs an \mbox{\hyperlink{classApplication}{Application}} instance with the given input directories. 
+Constructs an \doxylink{classApplication}{Application} instance with the given input directories. 
 
 
 \begin{DoxyParams}{Parameters}
@@ -87,24 +87,24 @@ Constructs an \mbox{\hyperlink{classApplication}{Application}} instance with the
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classApplication_a21d7db920a5e16fbf1ca9e334e2aff2f}\label{classApplication_a21d7db920a5e16fbf1ca9e334e2aff2f}} 
-\index{Application@{Application}!getDate@{getDate}}
+\Hypertarget{classApplication_a21d7db920a5e16fbf1ca9e334e2aff2f}\index{Application@{Application}!getDate@{getDate}}
 \index{getDate@{getDate}!Application@{Application}}
 \doxysubsubsection{\texorpdfstring{getDate()}{getDate()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{structDate}{Date}} Application\+::get\+Date (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily \label{classApplication_a21d7db920a5e16fbf1ca9e334e2aff2f} 
+\mbox{\hyperlink{structDate}{Date}} Application\+::get\+Date (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 
 
 Prompts the user to enter the journey date. 
 
 \begin{DoxyReturn}{Returns}
-A \mbox{\hyperlink{structDate}{Date}} object representing the entered date. 
+A \doxylink{structDate}{Date} object representing the entered date. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classApplication_ae3149a3eda0d83468cedddfc9fa41872}\label{classApplication_ae3149a3eda0d83468cedddfc9fa41872}} 
-\index{Application@{Application}!getDay@{getDay}}
+\Hypertarget{classApplication_ae3149a3eda0d83468cedddfc9fa41872}\index{Application@{Application}!getDay@{getDay}}
 \index{getDay@{getDay}!Application@{Application}}
 \doxysubsubsection{\texorpdfstring{getDay()}{getDay()}}
-{\footnotesize\ttfamily int Application\+::get\+Day (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily \label{classApplication_ae3149a3eda0d83468cedddfc9fa41872} 
+int Application\+::get\+Day (\begin{DoxyParamCaption}\item[{int}]{year}{, }\item[{int}]{month}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 
 
@@ -120,24 +120,24 @@ Prompts the user to enter the day.
 \begin{DoxyReturn}{Returns}
 The entered day as an integer. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classApplication_a206d153cced5df89f230741b0645dc13}\label{classApplication_a206d153cced5df89f230741b0645dc13}} 
-\index{Application@{Application}!getDepartureTime@{getDepartureTime}}
+\Hypertarget{classApplication_a206d153cced5df89f230741b0645dc13}\index{Application@{Application}!getDepartureTime@{getDepartureTime}}
 \index{getDepartureTime@{getDepartureTime}!Application@{Application}}
 \doxysubsubsection{\texorpdfstring{getDepartureTime()}{getDepartureTime()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{structTime}{Time}} Application\+::get\+Departure\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily \label{classApplication_a206d153cced5df89f230741b0645dc13} 
+\mbox{\hyperlink{structTime}{Time}} Application\+::get\+Departure\+Time (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 
 
 Prompts the user to enter the departure time. 
 
 \begin{DoxyReturn}{Returns}
-A \mbox{\hyperlink{structTime}{Time}} object representing the departure time. 
+A \doxylink{structTime}{Time} object representing the departure time. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classApplication_a4f084013adf7f8d94c9846bdd18b09de}\label{classApplication_a4f084013adf7f8d94c9846bdd18b09de}} 
-\index{Application@{Application}!getHours@{getHours}}
+\Hypertarget{classApplication_a4f084013adf7f8d94c9846bdd18b09de}\index{Application@{Application}!getHours@{getHours}}
 \index{getHours@{getHours}!Application@{Application}}
 \doxysubsubsection{\texorpdfstring{getHours()}{getHours()}}
-{\footnotesize\ttfamily int Application\+::get\+Hours (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily \label{classApplication_a4f084013adf7f8d94c9846bdd18b09de} 
+int Application\+::get\+Hours (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 
 
@@ -146,11 +146,11 @@ Prompts the user to enter the hour component of the departure time.
 \begin{DoxyReturn}{Returns}
 The entered hour as an integer. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classApplication_af7d7cc6698adaf407a6050c8e56e5129}\label{classApplication_af7d7cc6698adaf407a6050c8e56e5129}} 
-\index{Application@{Application}!getMinutes@{getMinutes}}
+\Hypertarget{classApplication_af7d7cc6698adaf407a6050c8e56e5129}\index{Application@{Application}!getMinutes@{getMinutes}}
 \index{getMinutes@{getMinutes}!Application@{Application}}
 \doxysubsubsection{\texorpdfstring{getMinutes()}{getMinutes()}}
-{\footnotesize\ttfamily int Application\+::get\+Minutes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily \label{classApplication_af7d7cc6698adaf407a6050c8e56e5129} 
+int Application\+::get\+Minutes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 
 
@@ -159,11 +159,11 @@ Prompts the user to enter the minutes component of the departure time.
 \begin{DoxyReturn}{Returns}
 The entered minutes as an integer. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classApplication_acc982701f0f72cfb3885e2014f6dc2d6}\label{classApplication_acc982701f0f72cfb3885e2014f6dc2d6}} 
-\index{Application@{Application}!getMonth@{getMonth}}
+\Hypertarget{classApplication_acc982701f0f72cfb3885e2014f6dc2d6}\index{Application@{Application}!getMonth@{getMonth}}
 \index{getMonth@{getMonth}!Application@{Application}}
 \doxysubsubsection{\texorpdfstring{getMonth()}{getMonth()}}
-{\footnotesize\ttfamily int Application\+::get\+Month (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily \label{classApplication_acc982701f0f72cfb3885e2014f6dc2d6} 
+int Application\+::get\+Month (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 
 
@@ -172,24 +172,24 @@ Prompts the user to enter the month.
 \begin{DoxyReturn}{Returns}
 The entered month as an integer. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classApplication_a6a6b3c6eff67d5e974db574d21c50078}\label{classApplication_a6a6b3c6eff67d5e974db574d21c50078}} 
-\index{Application@{Application}!getQuery@{getQuery}}
+\Hypertarget{classApplication_a6a6b3c6eff67d5e974db574d21c50078}\index{Application@{Application}!getQuery@{getQuery}}
 \index{getQuery@{getQuery}!Application@{Application}}
 \doxysubsubsection{\texorpdfstring{getQuery()}{getQuery()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{structQuery}{Query}} Application\+::get\+Query (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \label{classApplication_a6a6b3c6eff67d5e974db574d21c50078} 
+\mbox{\hyperlink{structQuery}{Query}} Application\+::get\+Query (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
 Retrieves a query from the user, including source, target, date, and time. 
 
 \begin{DoxyReturn}{Returns}
-A \mbox{\hyperlink{structQuery}{Query}} object representing the user\textquotesingle{}s transit request. 
+A \doxylink{structQuery}{Query} object representing the user\textquotesingle{}s transit request. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classApplication_a1f46bbc2467222352e6982d03d3c08a3}\label{classApplication_a1f46bbc2467222352e6982d03d3c08a3}} 
-\index{Application@{Application}!getSource@{getSource}}
+\Hypertarget{classApplication_a1f46bbc2467222352e6982d03d3c08a3}\index{Application@{Application}!getSource@{getSource}}
 \index{getSource@{getSource}!Application@{Application}}
 \doxysubsubsection{\texorpdfstring{getSource()}{getSource()}}
-{\footnotesize\ttfamily std\+::string Application\+::get\+Source (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \label{classApplication_a1f46bbc2467222352e6982d03d3c08a3} 
+std\+::string Application\+::get\+Source (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -198,11 +198,11 @@ Prompts the user to enter the source stop ID.
 \begin{DoxyReturn}{Returns}
 A valid source stop ID. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classApplication_aed1a74f67ca7f5be40a99ec91c56db92}\label{classApplication_aed1a74f67ca7f5be40a99ec91c56db92}} 
-\index{Application@{Application}!getTarget@{getTarget}}
+\Hypertarget{classApplication_aed1a74f67ca7f5be40a99ec91c56db92}\index{Application@{Application}!getTarget@{getTarget}}
 \index{getTarget@{getTarget}!Application@{Application}}
 \doxysubsubsection{\texorpdfstring{getTarget()}{getTarget()}}
-{\footnotesize\ttfamily std\+::string Application\+::get\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \label{classApplication_aed1a74f67ca7f5be40a99ec91c56db92} 
+std\+::string Application\+::get\+Target (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
@@ -211,11 +211,11 @@ Prompts the user to enter the target stop ID.
 \begin{DoxyReturn}{Returns}
 A valid target stop ID. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classApplication_a9f6d49fd0a5cfdc1df089dd5bcb62b38}\label{classApplication_a9f6d49fd0a5cfdc1df089dd5bcb62b38}} 
-\index{Application@{Application}!getYear@{getYear}}
+\Hypertarget{classApplication_a9f6d49fd0a5cfdc1df089dd5bcb62b38}\index{Application@{Application}!getYear@{getYear}}
 \index{getYear@{getYear}!Application@{Application}}
 \doxysubsubsection{\texorpdfstring{getYear()}{getYear()}}
-{\footnotesize\ttfamily int Application\+::get\+Year (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+{\footnotesize\ttfamily \label{classApplication_a9f6d49fd0a5cfdc1df089dd5bcb62b38} 
+int Application\+::get\+Year (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
 
 
 

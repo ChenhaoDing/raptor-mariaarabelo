@@ -1,5 +1,5 @@
-\hypertarget{DateTime_8h}{}\doxysection{src/\+Date\+Time.h File Reference}
-\label{DateTime_8h}\index{src/DateTime.h@{src/DateTime.h}}
+\doxysection{src/\+Date\+Time.h File Reference}
+\hypertarget{DateTime_8h}{}\label{DateTime_8h}\index{src/DateTime.h@{src/DateTime.h}}
 
 
 Provides data structures for representing dates and times in the RAPTOR application.  
@@ -22,53 +22,53 @@ This graph shows which files directly or indirectly include this file\+:
 \includegraphics[width=350pt]{DateTime_8h__dep__incl}
 \end{center}
 \end{figure}
-\doxysubsection*{Classes}
+\doxysubsubsection*{Classes}
 \begin{DoxyCompactItemize}
 \item 
 struct \mbox{\hyperlink{structDate}{Date}}
 \begin{DoxyCompactList}\small\item\em Represents a specific date in the Gregorian calendar. \end{DoxyCompactList}\item 
 struct \mbox{\hyperlink{structTime}{Time}}
 \begin{DoxyCompactList}\small\item\em Represents a specific time of day in hours, minutes, and seconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Enumerations}
+\doxysubsubsection*{Enumerations}
 \begin{DoxyCompactItemize}
 \item 
 enum class \mbox{\hyperlink{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adad}{Day}} \{ \mbox{\hyperlink{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adada4daff4cb75e848f1acb354bd0497f959}{Current\+Day}}
 , \mbox{\hyperlink{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adadaba0b37c4223f9cae64a54e5dd085e3a4}{Next\+Day}}
  \}
 \begin{DoxyCompactList}\small\item\em Represents the current or the next day for calculations. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Variables}
+\doxysubsubsection*{Variables}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{DateTime_8h_a227d770843fd921d89b26b5f043d30ea}\label{DateTime_8h_a227d770843fd921d89b26b5f043d30ea}} 
-static constexpr int \mbox{\hyperlink{DateTime_8h_a227d770843fd921d89b26b5f043d30ea}{MIDNIGHT}} = 24 $\ast$ 3600
-\begin{DoxyCompactList}\small\item\em Represents midnight in seconds (24 hours $\ast$ 3600 seconds per hour). \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{DateTime_8h_a0f82494724c4b13c3b6c143ffed4d971}\label{DateTime_8h_a0f82494724c4b13c3b6c143ffed4d971}} 
-constexpr const char $\ast$ \mbox{\hyperlink{DateTime_8h_a0f82494724c4b13c3b6c143ffed4d971}{weekdays\+\_\+names}} \mbox{[}$\,$\mbox{]} = \{\char`\"{}sunday\char`\"{}, \char`\"{}monday\char`\"{}, \char`\"{}tuesday\char`\"{}, \char`\"{}wednesday\char`\"{}, \char`\"{}thursday\char`\"{}, \char`\"{}friday\char`\"{}, \char`\"{}saturday\char`\"{}\}
+\Hypertarget{DateTime_8h_a227d770843fd921d89b26b5f043d30ea}\label{DateTime_8h_a227d770843fd921d89b26b5f043d30ea} 
+static constexpr int {\bfseries MIDNIGHT} = 24 \texorpdfstring{$\ast$}{*} 3600
+\begin{DoxyCompactList}\small\item\em Represents midnight in seconds (24 hours \texorpdfstring{$\ast$}{*} 3600 seconds per hour). \end{DoxyCompactList}\item 
+\Hypertarget{DateTime_8h_a0f82494724c4b13c3b6c143ffed4d971}\label{DateTime_8h_a0f82494724c4b13c3b6c143ffed4d971} 
+constexpr const char \texorpdfstring{$\ast$}{*} {\bfseries weekdays\+\_\+names} \mbox{[}$\,$\mbox{]} = \{"{}sunday"{}, "{}monday"{}, "{}tuesday"{}, "{}wednesday"{}, "{}thursday"{}, "{}friday"{}, "{}saturday"{}\}
 \begin{DoxyCompactList}\small\item\em Names of the weekdays starting from Sunday. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Provides data structures for representing dates and times in the RAPTOR application. 
 
-This header defines the \mbox{\hyperlink{structDate}{Date}} and \mbox{\hyperlink{structTime}{Time}} structures, along with auxiliary enums and constants, for handling and manipulating temporal data. 
+This header defines the \doxylink{structDate}{Date} and \doxylink{structTime}{Time} structures, along with auxiliary enums and constants, for handling and manipulating temporal data. 
 
 \doxysubsection{Enumeration Type Documentation}
-\mbox{\Hypertarget{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adad}\label{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adad}} 
-\index{DateTime.h@{DateTime.h}!Day@{Day}}
+\Hypertarget{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adad}\index{DateTime.h@{DateTime.h}!Day@{Day}}
 \index{Day@{Day}!DateTime.h@{DateTime.h}}
 \doxysubsubsection{\texorpdfstring{Day}{Day}}
-{\footnotesize\ttfamily enum \mbox{\hyperlink{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adad}{Day}}\hspace{0.3cm}{\ttfamily [strong]}}
+{\footnotesize\ttfamily \label{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adad} 
+enum class \mbox{\hyperlink{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adad}{Day}}\hspace{0.3cm}{\ttfamily [strong]}}
 
 
 
 Represents the current or the next day for calculations. 
 
-\begin{DoxyEnumFields}{Enumerator}
-\raisebox{\heightof{T}}[0pt][0pt]{\index{CurrentDay@{CurrentDay}!DateTime.h@{DateTime.h}}\index{DateTime.h@{DateTime.h}!CurrentDay@{CurrentDay}}}\mbox{\Hypertarget{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adada4daff4cb75e848f1acb354bd0497f959}\label{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adada4daff4cb75e848f1acb354bd0497f959}} 
+\begin{DoxyEnumFields}[2]{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CurrentDay@{CurrentDay}!DateTime.h@{DateTime.h}}\index{DateTime.h@{DateTime.h}!CurrentDay@{CurrentDay}}}\Hypertarget{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adada4daff4cb75e848f1acb354bd0497f959}\label{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adada4daff4cb75e848f1acb354bd0497f959} 
 Current\+Day&Refers to the current day. \\
 \hline
 
-\raisebox{\heightof{T}}[0pt][0pt]{\index{NextDay@{NextDay}!DateTime.h@{DateTime.h}}\index{DateTime.h@{DateTime.h}!NextDay@{NextDay}}}\mbox{\Hypertarget{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adadaba0b37c4223f9cae64a54e5dd085e3a4}\label{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adadaba0b37c4223f9cae64a54e5dd085e3a4}} 
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NextDay@{NextDay}!DateTime.h@{DateTime.h}}\index{DateTime.h@{DateTime.h}!NextDay@{NextDay}}}\Hypertarget{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adadaba0b37c4223f9cae64a54e5dd085e3a4}\label{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adadaba0b37c4223f9cae64a54e5dd085e3a4} 
 Next\+Day&Refers to the next day. \\
 \hline
 

@@ -1,5 +1,5 @@
-\hypertarget{classAgency}{}\doxysection{Agency Class Reference}
-\label{classAgency}\index{Agency@{Agency}}
+\doxysection{Agency Class Reference}
+\hypertarget{classAgency}{}\label{classAgency}\index{Agency@{Agency}}
 
 
 Represents a transit agency in the GTFS data.  
@@ -29,13 +29,29 @@ Collaboration diagram for Agency\+:
 \includegraphics[width=153pt]{classAgency__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Additional Inherited Members}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classGTFSObject}{GTFSObject}}}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classGTFSObject_ac9126c5d79ccabb9a218d73a0b9545cc}{set\+Field}} (const std\+::string \&field, const std\+::string \&value)
+\begin{DoxyCompactList}\small\item\em Sets the value of a field. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classGTFSObject_aa6250e6a26877f7d2e274dc68c2e83b9}{get\+Field}} (const std\+::string \&field) const
+\begin{DoxyCompactList}\small\item\em Retrieves the value of a field. \end{DoxyCompactList}\item 
+const std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ \& \mbox{\hyperlink{classGTFSObject_a5185c3aafc51db980961b2a42d027fb7}{get\+Fields}} () const
+\begin{DoxyCompactList}\small\item\em Gets all fields as an unordered map. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classGTFSObject_ac8fb8aa2e4fd4e443e7bbdc9fd6026b3}{has\+Field}} (const std\+::string \&field) const
+\begin{DoxyCompactList}\small\item\em Checks if a field exists. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classGTFSObject}{GTFSObject}}}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unordered\+\_\+map$<$ std\+::string, std\+::string $>$ {\bfseries fields}
+\begin{DoxyCompactList}\small\item\em Map of field names and values. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
 Represents a transit agency in the GTFS data. 
 
-This class inherits from \mbox{\hyperlink{classGTFSObject}{GTFSObject}} and encapsulates the details of a transit agency.
+This class inherits from \doxylink{classGTFSObject}{GTFSObject} and encapsulates the details of a transit agency.
 
 
 \begin{DoxyItemize}

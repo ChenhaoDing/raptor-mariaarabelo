@@ -1,5 +1,5 @@
-\hypertarget{classUtils}{}\doxysection{Utils Class Reference}
-\label{classUtils}\index{Utils@{Utils}}
+\doxysection{Utils Class Reference}
+\hypertarget{classUtils}{}\label{classUtils}\index{Utils@{Utils}}
 
 
 A utility class providing various helper functions.  
@@ -9,7 +9,7 @@ A utility class providing various helper functions.
 
 {\ttfamily \#include $<$Utils.\+h$>$}
 
-\doxysubsection*{Static Public Member Functions}
+\doxysubsubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 static double \mbox{\hyperlink{classUtils_a367dcb6a106e3c4d7496ca75e127fdc0}{manhattan}} (const double \&lat1, const double \&lon1, const double \&lat2, const double \&lon2)
@@ -21,7 +21,7 @@ static std\+::string \mbox{\hyperlink{classUtils_a219cb0853366ca80440600095a86d4
 static int \mbox{\hyperlink{classUtils_ad9ceb8adea9496350395a78cdfa7e2be}{time\+To\+Seconds}} (const std\+::string \&time\+Str)
 \begin{DoxyCompactList}\small\item\em Converts a time string to the equivalent number of seconds. \end{DoxyCompactList}\item 
 static int \mbox{\hyperlink{classUtils_ab596cd79ed1ddfc1eb29754832d95aaf}{time\+To\+Seconds}} (const \mbox{\hyperlink{structTime}{Time}} \&time)
-\begin{DoxyCompactList}\small\item\em Converts a \mbox{\hyperlink{structTime}{Time}} object to the equivalent number of seconds. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Converts a \doxylink{structTime}{Time} object to the equivalent number of seconds. \end{DoxyCompactList}\item 
 static std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classUtils_a4fedecec19cd1e20a69bfeed76e57fc1}{split}} (const std\+::string \&str, char delimiter)
 \begin{DoxyCompactList}\small\item\em Splits a string into a vector of substrings based on a delimiter. \end{DoxyCompactList}\item 
 static std\+::string \mbox{\hyperlink{classUtils_afc401a423c52d0d193d0635987a0f4aa}{get\+First\+Word}} (const std\+::string \&str)
@@ -37,7 +37,7 @@ static bool \mbox{\hyperlink{classUtils_a39c03e6760a9698e24e27d12f98a6cc7}{date\
 static \mbox{\hyperlink{structDate}{Date}} \mbox{\hyperlink{classUtils_afa27d13dbd4aed2ce28ea7fff142d3aa}{add\+One\+Day}} (\mbox{\hyperlink{structDate}{Date}} date)
 \begin{DoxyCompactList}\small\item\em Adds one day to a given date. \end{DoxyCompactList}\item 
 static std\+::string \mbox{\hyperlink{classUtils_a2ce922b97c44fedb48c907ce48b0df3e}{day\+To\+String}} (\mbox{\hyperlink{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adad}{Day}} day)
-\begin{DoxyCompactList}\small\item\em Converts a Day enum to a string representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Converts a \doxylink{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adad}{Day} enum to a string representation. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -46,11 +46,11 @@ A utility class providing various helper functions.
 This class contains static utility methods to handle mathematical calculations, time conversions, string manipulations, and date operations. These methods are used throughout the RAPTOR project to simplify code and provide common functionality. 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classUtils_afa27d13dbd4aed2ce28ea7fff142d3aa}\label{classUtils_afa27d13dbd4aed2ce28ea7fff142d3aa}} 
-\index{Utils@{Utils}!addOneDay@{addOneDay}}
+\Hypertarget{classUtils_afa27d13dbd4aed2ce28ea7fff142d3aa}\index{Utils@{Utils}!addOneDay@{addOneDay}}
 \index{addOneDay@{addOneDay}!Utils@{Utils}}
 \doxysubsubsection{\texorpdfstring{addOneDay()}{addOneDay()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{structDate}{Date}} Utils\+::add\+One\+Day (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structDate}{Date}}}]{date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{classUtils_afa27d13dbd4aed2ce28ea7fff142d3aa} 
+\mbox{\hyperlink{structDate}{Date}} Utils\+::add\+One\+Day (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structDate}{Date}}}]{date}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -66,11 +66,11 @@ This method increments the given date by one day.
 \begin{DoxyReturn}{Returns}
 The resulting date after adding one day. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classUtils_a8179f3ba8e881830ac9afe7673918fda}\label{classUtils_a8179f3ba8e881830ac9afe7673918fda}} 
-\index{Utils@{Utils}!clean@{clean}}
+\Hypertarget{classUtils_a8179f3ba8e881830ac9afe7673918fda}\index{Utils@{Utils}!clean@{clean}}
 \index{clean@{clean}!Utils@{Utils}}
 \doxysubsubsection{\texorpdfstring{clean()}{clean()}}
-{\footnotesize\ttfamily void Utils\+::clean (\begin{DoxyParamCaption}\item[{std\+::string \&}]{input }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{classUtils_a8179f3ba8e881830ac9afe7673918fda} 
+void Utils\+::clean (\begin{DoxyParamCaption}\item[{std\+::string \&}]{input}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -83,11 +83,11 @@ This method removes any leading or trailing whitespace from the given string.
 \mbox{\texttt{ in,out}}  & {\em line} & The line to be cleaned. \\
 \hline
 \end{DoxyParams}
-\mbox{\Hypertarget{classUtils_a39c03e6760a9698e24e27d12f98a6cc7}\label{classUtils_a39c03e6760a9698e24e27d12f98a6cc7}} 
-\index{Utils@{Utils}!dateWithinRange@{dateWithinRange}}
+\Hypertarget{classUtils_a39c03e6760a9698e24e27d12f98a6cc7}\index{Utils@{Utils}!dateWithinRange@{dateWithinRange}}
 \index{dateWithinRange@{dateWithinRange}!Utils@{Utils}}
 \doxysubsubsection{\texorpdfstring{dateWithinRange()}{dateWithinRange()}}
-{\footnotesize\ttfamily bool Utils\+::date\+Within\+Range (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structDate}{Date}} \&}]{date,  }\item[{const std\+::string \&}]{start\+\_\+date,  }\item[{const std\+::string \&}]{end\+\_\+date }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{classUtils_a39c03e6760a9698e24e27d12f98a6cc7} 
+bool Utils\+::date\+Within\+Range (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structDate}{Date}} \&}]{date}{, }\item[{const std\+::string \&}]{start\+\_\+date}{, }\item[{const std\+::string \&}]{end\+\_\+date}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -107,11 +107,11 @@ This method checks whether a given date falls within the specified range of star
 \begin{DoxyReturn}{Returns}
 True if the date is within the range, false otherwise. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classUtils_a2570c0c8b4531de8f4cdcada3c54329a}\label{classUtils_a2570c0c8b4531de8f4cdcada3c54329a}} 
-\index{Utils@{Utils}!daysInMonth@{daysInMonth}}
+\Hypertarget{classUtils_a2570c0c8b4531de8f4cdcada3c54329a}\index{Utils@{Utils}!daysInMonth@{daysInMonth}}
 \index{daysInMonth@{daysInMonth}!Utils@{Utils}}
 \doxysubsubsection{\texorpdfstring{daysInMonth()}{daysInMonth()}}
-{\footnotesize\ttfamily int Utils\+::days\+In\+Month (\begin{DoxyParamCaption}\item[{int}]{year,  }\item[{int}]{month }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{classUtils_a2570c0c8b4531de8f4cdcada3c54329a} 
+int Utils\+::days\+In\+Month (\begin{DoxyParamCaption}\item[{int}]{year}{, }\item[{int}]{month}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -129,31 +129,31 @@ This method returns the number of days in a given month, accounting for leap yea
 \begin{DoxyReturn}{Returns}
 The number of days in the specified month of the specified year. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classUtils_a2ce922b97c44fedb48c907ce48b0df3e}\label{classUtils_a2ce922b97c44fedb48c907ce48b0df3e}} 
-\index{Utils@{Utils}!dayToString@{dayToString}}
+\Hypertarget{classUtils_a2ce922b97c44fedb48c907ce48b0df3e}\index{Utils@{Utils}!dayToString@{dayToString}}
 \index{dayToString@{dayToString}!Utils@{Utils}}
 \doxysubsubsection{\texorpdfstring{dayToString()}{dayToString()}}
-{\footnotesize\ttfamily std\+::string Utils\+::day\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adad}{Day}}}]{day }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{classUtils_a2ce922b97c44fedb48c907ce48b0df3e} 
+std\+::string Utils\+::day\+To\+String (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adad}{Day}}}]{day}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-Converts a Day enum to a string representation. 
+Converts a \doxylink{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adad}{Day} enum to a string representation. 
 
-This method converts a Day enum (Current or Next) to its string representation.
+This method converts a \doxylink{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adad}{Day} enum (Current or Next) to its string representation.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em day} & The Day enum to be converted. \\
+\mbox{\texttt{ in}}  & {\em day} & The \doxylink{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adad}{Day} enum to be converted. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 The string representation of the specified day. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classUtils_ad1e4a64eb9e857edea3f162deebcff6a}\label{classUtils_ad1e4a64eb9e857edea3f162deebcff6a}} 
-\index{Utils@{Utils}!getDuration@{getDuration}}
+\Hypertarget{classUtils_ad1e4a64eb9e857edea3f162deebcff6a}\index{Utils@{Utils}!getDuration@{getDuration}}
 \index{getDuration@{getDuration}!Utils@{Utils}}
 \doxysubsubsection{\texorpdfstring{getDuration()}{getDuration()}}
-{\footnotesize\ttfamily int Utils\+::get\+Duration (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{string\+\_\+lat1,  }\item[{const std\+::string \&}]{string\+\_\+lon1,  }\item[{const std\+::string \&}]{string\+\_\+lat2,  }\item[{const std\+::string \&}]{string\+\_\+lon2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{classUtils_ad1e4a64eb9e857edea3f162deebcff6a} 
+int Utils\+::get\+Duration (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{string\+\_\+lat1}{, }\item[{const std\+::string \&}]{string\+\_\+lon1}{, }\item[{const std\+::string \&}]{string\+\_\+lat2}{, }\item[{const std\+::string \&}]{string\+\_\+lon2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -175,11 +175,11 @@ This method computes the duration based on the geographic distance between two s
 \begin{DoxyReturn}{Returns}
 The duration in seconds. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classUtils_afc401a423c52d0d193d0635987a0f4aa}\label{classUtils_afc401a423c52d0d193d0635987a0f4aa}} 
-\index{Utils@{Utils}!getFirstWord@{getFirstWord}}
+\Hypertarget{classUtils_afc401a423c52d0d193d0635987a0f4aa}\index{Utils@{Utils}!getFirstWord@{getFirstWord}}
 \index{getFirstWord@{getFirstWord}!Utils@{Utils}}
 \doxysubsubsection{\texorpdfstring{getFirstWord()}{getFirstWord()}}
-{\footnotesize\ttfamily std\+::string Utils\+::get\+First\+Word (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{classUtils_afc401a423c52d0d193d0635987a0f4aa} 
+std\+::string Utils\+::get\+First\+Word (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -195,11 +195,11 @@ This method extracts and returns the first word from a given string, stopping at
 \begin{DoxyReturn}{Returns}
 The first word in the string. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classUtils_a755097492f116b415aac79548e3d35f6}\label{classUtils_a755097492f116b415aac79548e3d35f6}} 
-\index{Utils@{Utils}!isNumber@{isNumber}}
+\Hypertarget{classUtils_a755097492f116b415aac79548e3d35f6}\index{Utils@{Utils}!isNumber@{isNumber}}
 \index{isNumber@{isNumber}!Utils@{Utils}}
 \doxysubsubsection{\texorpdfstring{isNumber()}{isNumber()}}
-{\footnotesize\ttfamily bool Utils\+::is\+Number (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{classUtils_a755097492f116b415aac79548e3d35f6} 
+bool Utils\+::is\+Number (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -215,17 +215,17 @@ This method checks whether the input string can be interpreted as a valid numeri
 \begin{DoxyReturn}{Returns}
 True if the string is a valid number, false otherwise. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classUtils_a367dcb6a106e3c4d7496ca75e127fdc0}\label{classUtils_a367dcb6a106e3c4d7496ca75e127fdc0}} 
-\index{Utils@{Utils}!manhattan@{manhattan}}
+\Hypertarget{classUtils_a367dcb6a106e3c4d7496ca75e127fdc0}\index{Utils@{Utils}!manhattan@{manhattan}}
 \index{manhattan@{manhattan}!Utils@{Utils}}
 \doxysubsubsection{\texorpdfstring{manhattan()}{manhattan()}}
-{\footnotesize\ttfamily double Utils\+::manhattan (\begin{DoxyParamCaption}\item[{const double \&}]{lat1,  }\item[{const double \&}]{lon1,  }\item[{const double \&}]{lat2,  }\item[{const double \&}]{lon2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{classUtils_a367dcb6a106e3c4d7496ca75e127fdc0} 
+double Utils\+::manhattan (\begin{DoxyParamCaption}\item[{const double \&}]{lat1}{, }\item[{const double \&}]{lon1}{, }\item[{const double \&}]{lat2}{, }\item[{const double \&}]{lon2}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
 Computes the Manhattan distance between two geographical points. 
 
-This method calculates the Manhattan (or \char`\"{}taxicab\char`\"{}) distance between two points given their latitude and longitude in decimal degrees. This distance is useful for certain types of grid-\/based calculations.
+This method calculates the Manhattan (or "{}taxicab"{}) distance between two points given their latitude and longitude in decimal degrees. This distance is useful for certain types of grid-\/based calculations.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -241,17 +241,17 @@ This method calculates the Manhattan (or \char`\"{}taxicab\char`\"{}) distance b
 \begin{DoxyReturn}{Returns}
 The Manhattan distance between the two points. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classUtils_a219cb0853366ca80440600095a86d4b3}\label{classUtils_a219cb0853366ca80440600095a86d4b3}} 
-\index{Utils@{Utils}!secondsToTime@{secondsToTime}}
+\Hypertarget{classUtils_a219cb0853366ca80440600095a86d4b3}\index{Utils@{Utils}!secondsToTime@{secondsToTime}}
 \index{secondsToTime@{secondsToTime}!Utils@{Utils}}
 \doxysubsubsection{\texorpdfstring{secondsToTime()}{secondsToTime()}}
-{\footnotesize\ttfamily std\+::string Utils\+::seconds\+To\+Time (\begin{DoxyParamCaption}\item[{std\+::optional$<$ int $>$}]{seconds }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{classUtils_a219cb0853366ca80440600095a86d4b3} 
+std\+::string Utils\+::seconds\+To\+Time (\begin{DoxyParamCaption}\item[{std\+::optional$<$ int $>$}]{seconds}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
 Converts a time in seconds to a string format (HH\+:\+MM\+:SS). 
 
-This method converts a given time in seconds into a formatted string representing the time in the \char`\"{}\+HH\+:\+MM\+:\+SS\char`\"{} format.
+This method converts a given time in seconds into a formatted string representing the time in the "{}\+HH\+:\+MM\+:\+SS"{} format.
 
 
 \begin{DoxyParams}[1]{Parameters}
@@ -259,13 +259,13 @@ This method converts a given time in seconds into a formatted string representin
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-A string representation of the time in \char`\"{}\+HH\+:\+MM\+:\+SS\char`\"{} format. 
+A string representation of the time in "{}\+HH\+:\+MM\+:\+SS"{} format. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classUtils_a4fedecec19cd1e20a69bfeed76e57fc1}\label{classUtils_a4fedecec19cd1e20a69bfeed76e57fc1}} 
-\index{Utils@{Utils}!split@{split}}
+\Hypertarget{classUtils_a4fedecec19cd1e20a69bfeed76e57fc1}\index{Utils@{Utils}!split@{split}}
 \index{split@{split}!Utils@{Utils}}
 \doxysubsubsection{\texorpdfstring{split()}{split()}}
-{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Utils\+::split (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str,  }\item[{char}]{delimiter }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{classUtils_a4fedecec19cd1e20a69bfeed76e57fc1} 
+std\+::vector$<$ std\+::string $>$ Utils\+::split (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{str}{, }\item[{char}]{delimiter}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
@@ -283,41 +283,41 @@ This method splits a string into parts wherever a specified delimiter appears.
 \begin{DoxyReturn}{Returns}
 A vector of substrings split from the input string. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classUtils_ad9ceb8adea9496350395a78cdfa7e2be}\label{classUtils_ad9ceb8adea9496350395a78cdfa7e2be}} 
-\index{Utils@{Utils}!timeToSeconds@{timeToSeconds}}
+\Hypertarget{classUtils_ad9ceb8adea9496350395a78cdfa7e2be}\index{Utils@{Utils}!timeToSeconds@{timeToSeconds}}
 \index{timeToSeconds@{timeToSeconds}!Utils@{Utils}}
 \doxysubsubsection{\texorpdfstring{timeToSeconds()}{timeToSeconds()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
-{\footnotesize\ttfamily int Utils\+::time\+To\+Seconds (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{time\+Str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{classUtils_ad9ceb8adea9496350395a78cdfa7e2be} 
+int Utils\+::time\+To\+Seconds (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{time\+Str}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
 Converts a time string to the equivalent number of seconds. 
 
-This method converts a time string (e.\+g., \char`\"{}12\+:30\+:00\char`\"{}) to the total number of seconds.
+This method converts a time string (e.\+g., "{}12\+:30\+:00"{}) to the total number of seconds.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em time\+Str} & A time string in the \char`\"{}\+HH\+:\+MM\+:\+SS\char`\"{} format. \\
+\mbox{\texttt{ in}}  & {\em time\+Str} & A time string in the "{}\+HH\+:\+MM\+:\+SS"{} format. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 The total time in seconds. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classUtils_ab596cd79ed1ddfc1eb29754832d95aaf}\label{classUtils_ab596cd79ed1ddfc1eb29754832d95aaf}} 
-\index{Utils@{Utils}!timeToSeconds@{timeToSeconds}}
+\Hypertarget{classUtils_ab596cd79ed1ddfc1eb29754832d95aaf}\index{Utils@{Utils}!timeToSeconds@{timeToSeconds}}
 \index{timeToSeconds@{timeToSeconds}!Utils@{Utils}}
 \doxysubsubsection{\texorpdfstring{timeToSeconds()}{timeToSeconds()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
-{\footnotesize\ttfamily int Utils\+::time\+To\+Seconds (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structTime}{Time}} \&}]{time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+{\footnotesize\ttfamily \label{classUtils_ab596cd79ed1ddfc1eb29754832d95aaf} 
+int Utils\+::time\+To\+Seconds (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structTime}{Time}} \&}]{time}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
 
 
 
-Converts a \mbox{\hyperlink{structTime}{Time}} object to the equivalent number of seconds. 
+Converts a \doxylink{structTime}{Time} object to the equivalent number of seconds. 
 
-This method converts a \mbox{\hyperlink{structTime}{Time}} object to the total number of seconds since midnight.
+This method converts a \doxylink{structTime}{Time} object to the total number of seconds since midnight.
 
 
 \begin{DoxyParams}[1]{Parameters}
-\mbox{\texttt{ in}}  & {\em time} & A \mbox{\hyperlink{structTime}{Time}} object representing a specific time. \\
+\mbox{\texttt{ in}}  & {\em time} & A \doxylink{structTime}{Time} object representing a specific time. \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}

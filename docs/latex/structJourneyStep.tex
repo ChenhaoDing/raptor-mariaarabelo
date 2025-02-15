@@ -1,5 +1,5 @@
-\hypertarget{structJourneyStep}{}\doxysection{Journey\+Step Struct Reference}
-\label{structJourneyStep}\index{JourneyStep@{JourneyStep}}
+\doxysection{Journey\+Step Struct Reference}
+\hypertarget{structJourneyStep}{}\label{structJourneyStep}\index{JourneyStep@{JourneyStep}}
 
 
 Represents a single step in a journey.  
@@ -19,35 +19,32 @@ Collaboration diagram for Journey\+Step\+:
 \includegraphics[width=169pt]{structJourneyStep__coll__graph}
 \end{center}
 \end{figure}
-\doxysubsection*{Public Attributes}
+\doxysubsubsection*{Public Attributes}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{structJourneyStep_ab70930242ed2a9e52d6b480b6fca71fc}\label{structJourneyStep_ab70930242ed2a9e52d6b480b6fca71fc}} 
-std\+::optional$<$ std\+::string $>$ \mbox{\hyperlink{structJourneyStep_ab70930242ed2a9e52d6b480b6fca71fc}{route\+\_\+id}}
-\begin{DoxyCompactList}\small\item\em ID of the route, or {\ttfamily std\+::nullopt} for footpaths. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{structJourneyStep_a500495cf4f27fe4a667fb297bbf0aed0}\label{structJourneyStep_a500495cf4f27fe4a667fb297bbf0aed0}} 
-std\+::optional$<$ std\+::string $>$ \mbox{\hyperlink{structJourneyStep_a500495cf4f27fe4a667fb297bbf0aed0}{trip\+\_\+id}}
+\Hypertarget{structJourneyStep_a500495cf4f27fe4a667fb297bbf0aed0}\label{structJourneyStep_a500495cf4f27fe4a667fb297bbf0aed0} 
+std\+::optional$<$ std\+::string $>$ {\bfseries trip\+\_\+id}
 \begin{DoxyCompactList}\small\item\em ID of the trip, or {\ttfamily std\+::nullopt} for footpaths. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{structJourneyStep_adb29678de0622faf7af2d52174b09722}\label{structJourneyStep_adb29678de0622faf7af2d52174b09722}} 
-std\+::optional$<$ std\+::string $>$ \mbox{\hyperlink{structJourneyStep_adb29678de0622faf7af2d52174b09722}{agency\+\_\+name}}
+\Hypertarget{structJourneyStep_adb29678de0622faf7af2d52174b09722}\label{structJourneyStep_adb29678de0622faf7af2d52174b09722} 
+std\+::optional$<$ std\+::string $>$ {\bfseries agency\+\_\+name}
 \begin{DoxyCompactList}\small\item\em Name of the agency, or {\ttfamily std\+::nullopt} for footpaths. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{structJourneyStep_a907806d31130d429ac30d7d1a8e93446}\label{structJourneyStep_a907806d31130d429ac30d7d1a8e93446}} 
-\mbox{\hyperlink{classStop}{Stop}} $\ast$ \mbox{\hyperlink{structJourneyStep_a907806d31130d429ac30d7d1a8e93446}{src\+\_\+stop}} \{\}
+\Hypertarget{structJourneyStep_a907806d31130d429ac30d7d1a8e93446}\label{structJourneyStep_a907806d31130d429ac30d7d1a8e93446} 
+\mbox{\hyperlink{classStop}{Stop}} \texorpdfstring{$\ast$}{*} {\bfseries src\+\_\+stop} \{\}
 \begin{DoxyCompactList}\small\item\em Pointer to the source stop. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{structJourneyStep_a5d50dd83db1d4866bdab21c9a2c2642b}\label{structJourneyStep_a5d50dd83db1d4866bdab21c9a2c2642b}} 
-\mbox{\hyperlink{classStop}{Stop}} $\ast$ \mbox{\hyperlink{structJourneyStep_a5d50dd83db1d4866bdab21c9a2c2642b}{dest\+\_\+stop}} \{\}
+\Hypertarget{structJourneyStep_a5d50dd83db1d4866bdab21c9a2c2642b}\label{structJourneyStep_a5d50dd83db1d4866bdab21c9a2c2642b} 
+\mbox{\hyperlink{classStop}{Stop}} \texorpdfstring{$\ast$}{*} {\bfseries dest\+\_\+stop} \{\}
 \begin{DoxyCompactList}\small\item\em Pointer to the destination stop. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{structJourneyStep_a6021d1f749fa33e4c029659800a10cfb}\label{structJourneyStep_a6021d1f749fa33e4c029659800a10cfb}} 
-int \mbox{\hyperlink{structJourneyStep_a6021d1f749fa33e4c029659800a10cfb}{departure\+\_\+secs}} \{\}
+\Hypertarget{structJourneyStep_a6021d1f749fa33e4c029659800a10cfb}\label{structJourneyStep_a6021d1f749fa33e4c029659800a10cfb} 
+int {\bfseries departure\+\_\+secs} \{\}
 \begin{DoxyCompactList}\small\item\em Departure time in seconds from midnight. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{structJourneyStep_a5442a2eae255c06e0d8eddb6097da08d}\label{structJourneyStep_a5442a2eae255c06e0d8eddb6097da08d}} 
-\mbox{\hyperlink{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adad}{Day}} \mbox{\hyperlink{structJourneyStep_a5442a2eae255c06e0d8eddb6097da08d}{day}} \{\}
-\begin{DoxyCompactList}\small\item\em Day of the journey step. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{structJourneyStep_a0b67a08fb70339a81f53c62a67d2cc6e}\label{structJourneyStep_a0b67a08fb70339a81f53c62a67d2cc6e}} 
-int \mbox{\hyperlink{structJourneyStep_a0b67a08fb70339a81f53c62a67d2cc6e}{duration}} \{\}
+\Hypertarget{structJourneyStep_a5442a2eae255c06e0d8eddb6097da08d}\label{structJourneyStep_a5442a2eae255c06e0d8eddb6097da08d} 
+\mbox{\hyperlink{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adad}{Day}} {\bfseries day} \{\}
+\begin{DoxyCompactList}\small\item\em \doxylink{DateTime_8h_ac572d2be8b3c04018816ba1a6e75adad}{Day} of the journey step. \end{DoxyCompactList}\item 
+\Hypertarget{structJourneyStep_a0b67a08fb70339a81f53c62a67d2cc6e}\label{structJourneyStep_a0b67a08fb70339a81f53c62a67d2cc6e} 
+int {\bfseries duration} \{\}
 \begin{DoxyCompactList}\small\item\em Duration of the step in seconds. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{structJourneyStep_aa8979f486942492bfeca7baade29abc1}\label{structJourneyStep_aa8979f486942492bfeca7baade29abc1}} 
-int \mbox{\hyperlink{structJourneyStep_aa8979f486942492bfeca7baade29abc1}{arrival\+\_\+secs}} \{\}
+\Hypertarget{structJourneyStep_aa8979f486942492bfeca7baade29abc1}\label{structJourneyStep_aa8979f486942492bfeca7baade29abc1} 
+int {\bfseries arrival\+\_\+secs} \{\}
 \begin{DoxyCompactList}\small\item\em Arrival time in seconds from midnight. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 

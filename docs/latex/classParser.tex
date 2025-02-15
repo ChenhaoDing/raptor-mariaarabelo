@@ -1,5 +1,5 @@
-\hypertarget{classParser}{}\doxysection{Parser Class Reference}
-\label{classParser}\index{Parser@{Parser}}
+\doxysection{Parser Class Reference}
+\hypertarget{classParser}{}\label{classParser}\index{Parser@{Parser}}
 
 
 Class for parsing GTFS data files and organizing the information.  
@@ -9,11 +9,11 @@ Class for parsing GTFS data files and organizing the information.
 
 {\ttfamily \#include $<$Parser.\+h$>$}
 
-\doxysubsection*{Public Member Functions}
+\doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
 \mbox{\hyperlink{classParser_aaf084dbeb20a725a898188998e450824}{Parser}} (std\+::string directory)
-\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classParser}{Parser}} class. \end{DoxyCompactList}\item 
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{classParser}{Parser} class. \end{DoxyCompactList}\item 
 std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classAgency}{Agency}} $>$ \mbox{\hyperlink{classParser_ab245c3a82d9578b06ad0c9b99130831b}{get\+Agencies}} ()
 \begin{DoxyCompactList}\small\item\em Gets the parsed agencies data. \end{DoxyCompactList}\item 
 std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classCalendar}{Calendar}} $>$ \mbox{\hyperlink{classParser_a83106f59943a23047755a4fed8550c83}{get\+Calendars}} ()
@@ -26,51 +26,51 @@ std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classTrip}{Trip}} $
 \begin{DoxyCompactList}\small\item\em Gets the parsed trips data. \end{DoxyCompactList}\item 
 std\+::unordered\+\_\+map$<$ std\+::pair$<$ std\+::string, std\+::string $>$, \mbox{\hyperlink{classStopTime}{Stop\+Time}}, \mbox{\hyperlink{structpair__hash}{pair\+\_\+hash}} $>$ \mbox{\hyperlink{classParser_a17374ad45584fab8b830a404d493a388}{get\+Stop\+Times}} ()
 \begin{DoxyCompactList}\small\item\em Gets the parsed stop times data. \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Member Functions}
+\doxysubsubsection*{Private Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classParser_a0c130c9dbd6e42d6ce9c20677afd642a}\label{classParser_a0c130c9dbd6e42d6ce9c20677afd642a}} 
-void \mbox{\hyperlink{classParser_a0c130c9dbd6e42d6ce9c20677afd642a}{parse\+Agencies}} ()
+\Hypertarget{classParser_a0c130c9dbd6e42d6ce9c20677afd642a}\label{classParser_a0c130c9dbd6e42d6ce9c20677afd642a} 
+void {\bfseries parse\+Agencies} ()
 \begin{DoxyCompactList}\small\item\em Parses the agencies file and stores the results in the agencies\+\_\+ map. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classParser_a31b050b75bd4a63188cd51a5076b4a62}\label{classParser_a31b050b75bd4a63188cd51a5076b4a62}} 
-void \mbox{\hyperlink{classParser_a31b050b75bd4a63188cd51a5076b4a62}{parse\+Calendars}} ()
+\Hypertarget{classParser_a31b050b75bd4a63188cd51a5076b4a62}\label{classParser_a31b050b75bd4a63188cd51a5076b4a62} 
+void {\bfseries parse\+Calendars} ()
 \begin{DoxyCompactList}\small\item\em Parses the calendars file and stores the results in the calendars\+\_\+ map. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classParser_ae85a0ec8dda286d6ea2a1526a7b461d9}\label{classParser_ae85a0ec8dda286d6ea2a1526a7b461d9}} 
-void \mbox{\hyperlink{classParser_ae85a0ec8dda286d6ea2a1526a7b461d9}{parse\+Routes}} ()
+\Hypertarget{classParser_ae85a0ec8dda286d6ea2a1526a7b461d9}\label{classParser_ae85a0ec8dda286d6ea2a1526a7b461d9} 
+void {\bfseries parse\+Routes} ()
 \begin{DoxyCompactList}\small\item\em Parses the routes file and stores the results in the routes\+\_\+ map. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classParser_a1233b261f07d203ef2ac04d25f84065e}\label{classParser_a1233b261f07d203ef2ac04d25f84065e}} 
-void \mbox{\hyperlink{classParser_a1233b261f07d203ef2ac04d25f84065e}{parse\+Stops}} ()
+\Hypertarget{classParser_a1233b261f07d203ef2ac04d25f84065e}\label{classParser_a1233b261f07d203ef2ac04d25f84065e} 
+void {\bfseries parse\+Stops} ()
 \begin{DoxyCompactList}\small\item\em Parses the stops file and stores the results in the stops\+\_\+ map. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classParser_a4e1057a20eebeccc86fb1fcb83c51f6b}\label{classParser_a4e1057a20eebeccc86fb1fcb83c51f6b}} 
-void \mbox{\hyperlink{classParser_a4e1057a20eebeccc86fb1fcb83c51f6b}{parse\+Trips}} ()
+\Hypertarget{classParser_a4e1057a20eebeccc86fb1fcb83c51f6b}\label{classParser_a4e1057a20eebeccc86fb1fcb83c51f6b} 
+void {\bfseries parse\+Trips} ()
 \begin{DoxyCompactList}\small\item\em Parses the trips file and stores the results in the trips\+\_\+ map. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classParser_a8d3f123ba7be5fc8ac8380019e9bd83c}\label{classParser_a8d3f123ba7be5fc8ac8380019e9bd83c}} 
-void \mbox{\hyperlink{classParser_a8d3f123ba7be5fc8ac8380019e9bd83c}{parse\+Stop\+Times}} ()
+\Hypertarget{classParser_a8d3f123ba7be5fc8ac8380019e9bd83c}\label{classParser_a8d3f123ba7be5fc8ac8380019e9bd83c} 
+void {\bfseries parse\+Stop\+Times} ()
 \begin{DoxyCompactList}\small\item\em Parses the stop times file and stores the results in the stop\+\_\+times\+\_\+ map. \end{DoxyCompactList}\item 
 void \mbox{\hyperlink{classParser_a479d979566051b350dc663d678427382}{associate\+Data}} ()
 \begin{DoxyCompactList}\small\item\em Associates data across various GTFS components (routes, trips, stops, etc.). \end{DoxyCompactList}\end{DoxyCompactItemize}
-\doxysubsection*{Private Attributes}
+\doxysubsubsection*{Private Attributes}
 \begin{DoxyCompactItemize}
 \item 
 std\+::string \mbox{\hyperlink{classParser_aa228bcd41a1672000e569b11f8d4b858}{input\+Directory}}
 \item 
 std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classAgency}{Agency}} $>$ \mbox{\hyperlink{classParser_a4d1c9f79d2e4061cc1ee87c4282d75bb}{agencies\+\_\+}}
-\begin{DoxyCompactList}\small\item\em A map from agency IDs to \mbox{\hyperlink{classAgency}{Agency}} objects. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classParser_a8fd1417ca12534442f63370c3ecac1d1}\label{classParser_a8fd1417ca12534442f63370c3ecac1d1}} 
-std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classCalendar}{Calendar}} $>$ \mbox{\hyperlink{classParser_a8fd1417ca12534442f63370c3ecac1d1}{calendars\+\_\+}}
-\begin{DoxyCompactList}\small\item\em A map from calendar IDs to \mbox{\hyperlink{classCalendar}{Calendar}} objects. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classParser_ab80d1f8fb17543adca9bce7fba31dc5c}\label{classParser_ab80d1f8fb17543adca9bce7fba31dc5c}} 
-std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classStop}{Stop}} $>$ \mbox{\hyperlink{classParser_ab80d1f8fb17543adca9bce7fba31dc5c}{stops\+\_\+}}
-\begin{DoxyCompactList}\small\item\em A map from stop IDs to \mbox{\hyperlink{classStop}{Stop}} objects. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classParser_a055f99b5b2897039e3020b24bba86568}\label{classParser_a055f99b5b2897039e3020b24bba86568}} 
-std\+::unordered\+\_\+map$<$ std\+::pair$<$ std\+::string, std\+::string $>$, \mbox{\hyperlink{classRoute}{Route}}, \mbox{\hyperlink{structpair__hash}{pair\+\_\+hash}} $>$ \mbox{\hyperlink{classParser_a055f99b5b2897039e3020b24bba86568}{routes\+\_\+}}
-\begin{DoxyCompactList}\small\item\em A map from (route\+\_\+id, direction\+\_\+id) to \mbox{\hyperlink{classRoute}{Route}} objects. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classParser_aba93f27dde5b843ed2a8389803e1eef3}\label{classParser_aba93f27dde5b843ed2a8389803e1eef3}} 
-std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classTrip}{Trip}} $>$ \mbox{\hyperlink{classParser_aba93f27dde5b843ed2a8389803e1eef3}{trips\+\_\+}}
-\begin{DoxyCompactList}\small\item\em A map from trip IDs to \mbox{\hyperlink{classTrip}{Trip}} objects. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classParser_abd9284c95d5288d355a242eae06878ca}\label{classParser_abd9284c95d5288d355a242eae06878ca}} 
-std\+::unordered\+\_\+map$<$ std\+::pair$<$ std\+::string, std\+::string $>$, \mbox{\hyperlink{classStopTime}{Stop\+Time}}, \mbox{\hyperlink{structpair__hash}{pair\+\_\+hash}} $>$ \mbox{\hyperlink{classParser_abd9284c95d5288d355a242eae06878ca}{stop\+\_\+times\+\_\+}}
-\begin{DoxyCompactList}\small\item\em A map from (trip\+\_\+id, stop\+\_\+id) to \mbox{\hyperlink{classStopTime}{Stop\+Time}} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em A map from agency IDs to \doxylink{classAgency}{Agency} objects. \end{DoxyCompactList}\item 
+\Hypertarget{classParser_a8fd1417ca12534442f63370c3ecac1d1}\label{classParser_a8fd1417ca12534442f63370c3ecac1d1} 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classCalendar}{Calendar}} $>$ {\bfseries calendars\+\_\+}
+\begin{DoxyCompactList}\small\item\em A map from calendar IDs to \doxylink{classCalendar}{Calendar} objects. \end{DoxyCompactList}\item 
+\Hypertarget{classParser_ab80d1f8fb17543adca9bce7fba31dc5c}\label{classParser_ab80d1f8fb17543adca9bce7fba31dc5c} 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classStop}{Stop}} $>$ {\bfseries stops\+\_\+}
+\begin{DoxyCompactList}\small\item\em A map from stop IDs to \doxylink{classStop}{Stop} objects. \end{DoxyCompactList}\item 
+\Hypertarget{classParser_a055f99b5b2897039e3020b24bba86568}\label{classParser_a055f99b5b2897039e3020b24bba86568} 
+std\+::unordered\+\_\+map$<$ std\+::pair$<$ std\+::string, std\+::string $>$, \mbox{\hyperlink{classRoute}{Route}}, \mbox{\hyperlink{structpair__hash}{pair\+\_\+hash}} $>$ {\bfseries routes\+\_\+}
+\begin{DoxyCompactList}\small\item\em A map from (route\+\_\+id, direction\+\_\+id) to \doxylink{classRoute}{Route} objects. \end{DoxyCompactList}\item 
+\Hypertarget{classParser_aba93f27dde5b843ed2a8389803e1eef3}\label{classParser_aba93f27dde5b843ed2a8389803e1eef3} 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classTrip}{Trip}} $>$ {\bfseries trips\+\_\+}
+\begin{DoxyCompactList}\small\item\em A map from trip IDs to \doxylink{classTrip}{Trip} objects. \end{DoxyCompactList}\item 
+\Hypertarget{classParser_abd9284c95d5288d355a242eae06878ca}\label{classParser_abd9284c95d5288d355a242eae06878ca} 
+std\+::unordered\+\_\+map$<$ std\+::pair$<$ std\+::string, std\+::string $>$, \mbox{\hyperlink{classStopTime}{Stop\+Time}}, \mbox{\hyperlink{structpair__hash}{pair\+\_\+hash}} $>$ {\bfseries stop\+\_\+times\+\_\+}
+\begin{DoxyCompactList}\small\item\em A map from (trip\+\_\+id, stop\+\_\+id) to \doxylink{classStopTime}{Stop\+Time} objects. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
@@ -79,15 +79,15 @@ Class for parsing GTFS data files and organizing the information.
 This class is responsible for parsing various GTFS data files such as agencies, calendars, stops, routes, trips, and stop times. It stores the parsed data in appropriate data structures and allows access to the parsed information. 
 
 \doxysubsection{Constructor \& Destructor Documentation}
-\mbox{\Hypertarget{classParser_aaf084dbeb20a725a898188998e450824}\label{classParser_aaf084dbeb20a725a898188998e450824}} 
-\index{Parser@{Parser}!Parser@{Parser}}
+\Hypertarget{classParser_aaf084dbeb20a725a898188998e450824}\index{Parser@{Parser}!Parser@{Parser}}
 \index{Parser@{Parser}!Parser@{Parser}}
 \doxysubsubsection{\texorpdfstring{Parser()}{Parser()}}
-{\footnotesize\ttfamily Parser\+::\+Parser (\begin{DoxyParamCaption}\item[{std\+::string}]{directory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
+{\footnotesize\ttfamily \label{classParser_aaf084dbeb20a725a898188998e450824} 
+Parser\+::\+Parser (\begin{DoxyParamCaption}\item[{std\+::string}]{directory}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [explicit]}}
 
 
 
-Constructor for the \mbox{\hyperlink{classParser}{Parser}} class. 
+Constructor for the \doxylink{classParser}{Parser} class. 
 
 Initializes the parser with the specified directory containing the GTFS data files.
 
@@ -99,112 +99,112 @@ Initializes the parser with the specified directory containing the GTFS data fil
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{classParser_a479d979566051b350dc663d678427382}\label{classParser_a479d979566051b350dc663d678427382}} 
-\index{Parser@{Parser}!associateData@{associateData}}
+\Hypertarget{classParser_a479d979566051b350dc663d678427382}\index{Parser@{Parser}!associateData@{associateData}}
 \index{associateData@{associateData}!Parser@{Parser}}
 \doxysubsubsection{\texorpdfstring{associateData()}{associateData()}}
-{\footnotesize\ttfamily void Parser\+::associate\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \label{classParser_a479d979566051b350dc663d678427382} 
+void Parser\+::associate\+Data (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
 Associates data across various GTFS components (routes, trips, stops, etc.). 
 
-This method processes the data from different GTFS files and associates the relevant information such as matching trips with corresponding stops and stop times. \mbox{\Hypertarget{classParser_ab245c3a82d9578b06ad0c9b99130831b}\label{classParser_ab245c3a82d9578b06ad0c9b99130831b}} 
-\index{Parser@{Parser}!getAgencies@{getAgencies}}
+This method processes the data from different GTFS files and associates the relevant information such as matching trips with corresponding stops and stop times. \Hypertarget{classParser_ab245c3a82d9578b06ad0c9b99130831b}\index{Parser@{Parser}!getAgencies@{getAgencies}}
 \index{getAgencies@{getAgencies}!Parser@{Parser}}
 \doxysubsubsection{\texorpdfstring{getAgencies()}{getAgencies()}}
-{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classAgency}{Agency}} $>$ Parser\+::get\+Agencies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classParser_ab245c3a82d9578b06ad0c9b99130831b} 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classAgency}{Agency}} $>$ Parser\+::get\+Agencies (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
 Gets the parsed agencies data. 
 
 \begin{DoxyReturn}{Returns}
-A map of agency IDs to \mbox{\hyperlink{classAgency}{Agency}} objects. 
+A map of agency IDs to \doxylink{classAgency}{Agency} objects. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classParser_a83106f59943a23047755a4fed8550c83}\label{classParser_a83106f59943a23047755a4fed8550c83}} 
-\index{Parser@{Parser}!getCalendars@{getCalendars}}
+\Hypertarget{classParser_a83106f59943a23047755a4fed8550c83}\index{Parser@{Parser}!getCalendars@{getCalendars}}
 \index{getCalendars@{getCalendars}!Parser@{Parser}}
 \doxysubsubsection{\texorpdfstring{getCalendars()}{getCalendars()}}
-{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classCalendar}{Calendar}} $>$ Parser\+::get\+Calendars (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classParser_a83106f59943a23047755a4fed8550c83} 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classCalendar}{Calendar}} $>$ Parser\+::get\+Calendars (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
 Gets the parsed calendars data. 
 
 \begin{DoxyReturn}{Returns}
-A map of calendar IDs to \mbox{\hyperlink{classCalendar}{Calendar}} objects. 
+A map of calendar IDs to \doxylink{classCalendar}{Calendar} objects. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classParser_ae46c5f5ae162e1d008c64bbab1b46c44}\label{classParser_ae46c5f5ae162e1d008c64bbab1b46c44}} 
-\index{Parser@{Parser}!getRoutes@{getRoutes}}
+\Hypertarget{classParser_ae46c5f5ae162e1d008c64bbab1b46c44}\index{Parser@{Parser}!getRoutes@{getRoutes}}
 \index{getRoutes@{getRoutes}!Parser@{Parser}}
 \doxysubsubsection{\texorpdfstring{getRoutes()}{getRoutes()}}
-{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::pair$<$ std\+::string, std\+::string $>$, \mbox{\hyperlink{classRoute}{Route}}, \mbox{\hyperlink{structpair__hash}{pair\+\_\+hash}} $>$ Parser\+::get\+Routes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classParser_ae46c5f5ae162e1d008c64bbab1b46c44} 
+std\+::unordered\+\_\+map$<$ std\+::pair$<$ std\+::string, std\+::string $>$, \mbox{\hyperlink{classRoute}{Route}}, \mbox{\hyperlink{structpair__hash}{pair\+\_\+hash}} $>$ Parser\+::get\+Routes (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
 Gets the parsed routes data. 
 
 \begin{DoxyReturn}{Returns}
-A map of (route\+\_\+id, direction\+\_\+id) pairs to \mbox{\hyperlink{classRoute}{Route}} objects. 
+A map of (route\+\_\+id, direction\+\_\+id) pairs to \doxylink{classRoute}{Route} objects. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classParser_ac73124d564bd5123bff4eb64b7054e76}\label{classParser_ac73124d564bd5123bff4eb64b7054e76}} 
-\index{Parser@{Parser}!getStops@{getStops}}
+\Hypertarget{classParser_ac73124d564bd5123bff4eb64b7054e76}\index{Parser@{Parser}!getStops@{getStops}}
 \index{getStops@{getStops}!Parser@{Parser}}
 \doxysubsubsection{\texorpdfstring{getStops()}{getStops()}}
-{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classStop}{Stop}} $>$ Parser\+::get\+Stops (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classParser_ac73124d564bd5123bff4eb64b7054e76} 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classStop}{Stop}} $>$ Parser\+::get\+Stops (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
 Gets the parsed stops data. 
 
 \begin{DoxyReturn}{Returns}
-A map of stop IDs to \mbox{\hyperlink{classStop}{Stop}} objects. 
+A map of stop IDs to \doxylink{classStop}{Stop} objects. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classParser_a17374ad45584fab8b830a404d493a388}\label{classParser_a17374ad45584fab8b830a404d493a388}} 
-\index{Parser@{Parser}!getStopTimes@{getStopTimes}}
+\Hypertarget{classParser_a17374ad45584fab8b830a404d493a388}\index{Parser@{Parser}!getStopTimes@{getStopTimes}}
 \index{getStopTimes@{getStopTimes}!Parser@{Parser}}
 \doxysubsubsection{\texorpdfstring{getStopTimes()}{getStopTimes()}}
-{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::pair$<$ std\+::string, std\+::string $>$, \mbox{\hyperlink{classStopTime}{Stop\+Time}}, \mbox{\hyperlink{structpair__hash}{pair\+\_\+hash}} $>$ Parser\+::get\+Stop\+Times (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classParser_a17374ad45584fab8b830a404d493a388} 
+std\+::unordered\+\_\+map$<$ std\+::pair$<$ std\+::string, std\+::string $>$, \mbox{\hyperlink{classStopTime}{Stop\+Time}}, \mbox{\hyperlink{structpair__hash}{pair\+\_\+hash}} $>$ Parser\+::get\+Stop\+Times (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
 Gets the parsed stop times data. 
 
 \begin{DoxyReturn}{Returns}
-A map of (trip\+\_\+id, stop\+\_\+id) pairs to \mbox{\hyperlink{classStopTime}{Stop\+Time}} objects. 
+A map of (trip\+\_\+id, stop\+\_\+id) pairs to \doxylink{classStopTime}{Stop\+Time} objects. 
 \end{DoxyReturn}
-\mbox{\Hypertarget{classParser_abd57585173d1c3cb9c1328aa71ff4284}\label{classParser_abd57585173d1c3cb9c1328aa71ff4284}} 
-\index{Parser@{Parser}!getTrips@{getTrips}}
+\Hypertarget{classParser_abd57585173d1c3cb9c1328aa71ff4284}\index{Parser@{Parser}!getTrips@{getTrips}}
 \index{getTrips@{getTrips}!Parser@{Parser}}
 \doxysubsubsection{\texorpdfstring{getTrips()}{getTrips()}}
-{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classTrip}{Trip}} $>$ Parser\+::get\+Trips (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \label{classParser_abd57585173d1c3cb9c1328aa71ff4284} 
+std\+::unordered\+\_\+map$<$ std\+::string, \mbox{\hyperlink{classTrip}{Trip}} $>$ Parser\+::get\+Trips (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [nodiscard]}}
 
 
 
 Gets the parsed trips data. 
 
 \begin{DoxyReturn}{Returns}
-A map of trip IDs to \mbox{\hyperlink{classTrip}{Trip}} objects. 
+A map of trip IDs to \doxylink{classTrip}{Trip} objects. 
 \end{DoxyReturn}
 
 
 \doxysubsection{Member Data Documentation}
-\mbox{\Hypertarget{classParser_a4d1c9f79d2e4061cc1ee87c4282d75bb}\label{classParser_a4d1c9f79d2e4061cc1ee87c4282d75bb}} 
-\index{Parser@{Parser}!agencies\_@{agencies\_}}
+\Hypertarget{classParser_a4d1c9f79d2e4061cc1ee87c4282d75bb}\index{Parser@{Parser}!agencies\_@{agencies\_}}
 \index{agencies\_@{agencies\_}!Parser@{Parser}}
 \doxysubsubsection{\texorpdfstring{agencies\_}{agencies\_}}
-{\footnotesize\ttfamily std\+::unordered\+\_\+map$<$std\+::string, \mbox{\hyperlink{classAgency}{Agency}}$>$ Parser\+::agencies\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \label{classParser_a4d1c9f79d2e4061cc1ee87c4282d75bb} 
+std\+::unordered\+\_\+map$<$std\+::string, \mbox{\hyperlink{classAgency}{Agency}}$>$ Parser\+::agencies\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
 
 
 
-A map from agency IDs to \mbox{\hyperlink{classAgency}{Agency}} objects. 
+A map from agency IDs to \doxylink{classAgency}{Agency} objects. 
 
-Maps to store parsed data. \mbox{\Hypertarget{classParser_aa228bcd41a1672000e569b11f8d4b858}\label{classParser_aa228bcd41a1672000e569b11f8d4b858}} 
-\index{Parser@{Parser}!inputDirectory@{inputDirectory}}
+Maps to store parsed data. \Hypertarget{classParser_aa228bcd41a1672000e569b11f8d4b858}\index{Parser@{Parser}!inputDirectory@{inputDirectory}}
 \index{inputDirectory@{inputDirectory}!Parser@{Parser}}
 \doxysubsubsection{\texorpdfstring{inputDirectory}{inputDirectory}}
-{\footnotesize\ttfamily std\+::string Parser\+::input\+Directory\hspace{0.3cm}{\ttfamily [private]}}
+{\footnotesize\ttfamily \label{classParser_aa228bcd41a1672000e569b11f8d4b858} 
+std\+::string Parser\+::input\+Directory\hspace{0.3cm}{\ttfamily [private]}}
 
 Directory where the input files are located. 
 
