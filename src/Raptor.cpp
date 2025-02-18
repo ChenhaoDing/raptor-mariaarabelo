@@ -42,12 +42,12 @@ void Raptor::initializeFootpaths() {
 
   // Avoid duplicating calculations for both sides
   for (auto it1 = stops_.begin(); it1 != stops_.end(); ++it1) {
-    const std::string &id1 = it1->first;
-    Stop &stop1 = it1->second;
+    const std::string &id1 = it1->first;  // Get stop_id
+    Stop &stop1 = it1->second;  // Get stop itself
 
     // Start the inner loop from the next element
     for (auto it2 = std::next(it1); it2 != stops_.end(); ++it2) {
-      const std::string &id2 = it2->first; // stop_id
+      const std::string &id2 = it2->first; // Get stop_id
       Stop &stop2 = it2->second; // stop itself
 
       // Calculate duration between the two stops
@@ -70,28 +70,34 @@ void Raptor::initializeFootpaths() {
 }
 
 void Raptor::initializeAlgorithm() {
+  // Format departure time to HH:MM:00
   std::ostringstream time_oss;
   time_oss << std::setw(2) << std::setfill('0') << query_.departure_time.hours << ":"
            << std::setw(2) << std::setfill('0') << query_.departure_time.minutes << ":00";
 
+  // Print query details
   std::cout << "Query from " << stops_[query_.source_id].getField("stop_name")
             << " to " << stops_[query_.target_id].getField("stop_name")
             << " departing " << query_.date.day << "/" << query_.date.month << "/" << query_.date.year
             << " (" << weekdays_names[query_.date.weekday]
             << ") at " << time_oss.str() << std::endl << std::endl;
 
+  // Initialize data structures
   arrivals_.clear();
   prev_marked_stops.clear();
   marked_stops.clear();
 
+  // Initialize arrival times for all stops
   for (const auto &[id, stop]: stops_)
     arrivals_[id] = std::vector<StopInfo>(1, {std::nullopt, std::nullopt, std::nullopt, std::nullopt});
 
+  // Initialize the round 0
   k = 0;
   markStop(query_.source_id, Utils::timeToSeconds(query_.departure_time), std::nullopt, std::nullopt);
 
   k++; // k=1
 
+  // Fill active trips for current and next day
   fillActiveTrips(Day::CurrentDay);
   fillActiveTrips(Day::NextDay);
 }
@@ -110,8 +116,11 @@ void Raptor::fillActiveTrips(Day day) {
 
   // Iterates over all trips
   for (auto &[trip_id, trip]: trips_) {
+    // Get service calendar for the trip
     const Calendar &calendar = calendars_.at(trip.getField("service_id"));
 
+    // Check if the service is active for the target date
+    // Only active services are considered
     if (isServiceActive(calendar, target_date))
       trip.setActive(day, true);
     else
@@ -127,15 +136,26 @@ std::vector<Journey> Raptor::findJourneys() {
 
   while (true) {
 
+    // Print round number
     std::cout << std::endl << "Round " << k << std::endl << std::endl;
 
+    // Set upper bound for arrival times
+    // Use the minimum arrival time from the previous round as the base for the current round
     setUpperBound();
 
+    // Update previous marked stops and clear current marked stops
+    // Only focus on active stops from the previous round
     prev_marked_stops = marked_stops;
     marked_stops.clear();
 
     // Accumulate routes serving marked stops from previous round
     // ((route_id, direction_id), stop_id)
+    // routes_stops_set:
+    // {
+    //   {(route_id, direction_id), stop_id},
+    //   {(route_id, direction_id), stop_id},
+    //   ...
+    // }
     std::unordered_set<std::pair<std::pair<std::string, std::string>, std::string>, nested_pair_hash> routes_stops_set = accumulateRoutesServingStops();
     std::cout << "Accumulated " << routes_stops_set.size() << " routes serving stops." << std::endl;
 
@@ -179,10 +199,12 @@ std::vector<Journey> Raptor::findJourneys() {
 }
 
 void Raptor::setUpperBound() {
+  // Use the minimum arrival time from the previous round as the base for the current round
   for (const auto &[stop_id, stop]: stops_)
     setMinArrivalTime(stop_id, arrivals_[stop_id][k - 1]);
 }
 
+// Define the type of routes_stops_set
 std::unordered_set<std::pair<std::pair<std::string, std::string>, std::string>, nested_pair_hash>
 Raptor::accumulateRoutesServingStops() {
   std::unordered_set<std::pair<std::pair<std::string, std::string>, std::string>, nested_pair_hash> routes_stops_set;
@@ -193,20 +215,29 @@ Raptor::accumulateRoutesServingStops() {
     if (marked_stop_id == query_.target_id) continue; // No need to accumulate routes serving the target stop
 
     // For each route r serving p
+    // Route key: (route_id, direction_id)
     for (const auto &route_key: stops_[marked_stop_id].getRouteKeys()) {
 
-      // Iterate over all stops in the route
+      // Initialize a flag to check if the route already has a point in the list
+      // Make sure that max. one stop is added per route
       bool already_has_point = false;
+      // Iterate over all stops in the route
       for (std::string stop_id: routes_[route_key].getStopsIds()) {
 
         // Check if a point p' is already in the list
+        // If not, existing_entry is routes_stops_set.end()
         auto existing_entry = routes_stops_set.find({route_key, stop_id});
+        // For route r, if a point p' is already in the list, then we need to check if marked_p comes before p'
+        // Only the first stop of a route is added to the list
         if (existing_entry != routes_stops_set.end()) {
+          // Avoid adding the same stop twice
           already_has_point = true;
 
+          // Find the position of marked_p in the route
           auto it_marked = std::find_if(routes_[route_key].getStopsIds().begin(),
                                         routes_[route_key].getStopsIds().end(),
                                         [&](const std::string &s_id) { return s_id == marked_stop_id; });
+          // Find the position of p' in the route
           auto it_stop = std::find_if(routes_[route_key].getStopsIds().begin(), routes_[route_key].getStopsIds().end(),
                                       [&](const std::string &s_id) { return s_id == stop_id; });
 
@@ -217,35 +248,43 @@ Raptor::accumulateRoutesServingStops() {
         }
       }
 
-      if (!already_has_point)    // The route does not have a point in the list
+      // If the route does not have a point in the list, then add the stop
+      if (!already_has_point)
         routes_stops_set.insert({route_key, marked_stop_id});
       // TODO: avoid accumulating routes that do not have any active trip
     }
   }
 
+  // Return the set of routes serving stops
   return routes_stops_set;
 }
 
 void Raptor::traverseRoutes(
         std::unordered_set<std::pair<std::pair<std::string, std::string>, std::string>, nested_pair_hash> routes_stops_set) {
+  
+  // Iterate over all routes in the set
   auto route_stop = routes_stops_set.begin();
-
   while (route_stop != routes_stops_set.end()) {
+    // Get the route key and the stop id
     const auto &[route_key, p_stop_id] = *route_stop;
+    // Get the route
     const Route &route = routes_[route_key];
-
+    // Find the position of the stop in the route
     auto stop_it = std::find_if(route.getStopsIds().begin(), route.getStopsIds().end(),
                                 [&](const std::string &s_id) {
                                   return s_id == p_stop_id;
                                 });
 
     // For each stop pi on this route, try to find the earliest trip (et) that can be taken
+    // Iterate over all stops in the route after the stop p
     for (auto it = stop_it; it != route.getStopsIds().end(); ++it) {
+      // Get the stop id
       std::string pi_stop_id = *it;
 
-      // If stop is not reachable, no trip can be caught
+      // Get the arrival time of the stop in the previous round k-1
       std::optional<int> stop_prev_arrival = arrivals_[pi_stop_id][k - 1].arrival_seconds; // TODO: really k-1?
 
+      // If stop is not reachable in the previous round k-1, no trip can be caught
       if (!stop_prev_arrival.has_value()) continue;
 
       // Find the earliest trip in route r that can be caught at stop pi in round k
@@ -400,6 +439,7 @@ void Raptor::markStop(const std::string &stop_id, int arrival,
 //  }
 }
 
+// Updates arrival time of stops that are connected by footpaths
 void Raptor::handleFootpaths() {
   // For each previously marked stop p
   for (const auto &stop_id: prev_marked_stops) {
@@ -560,6 +600,7 @@ void Raptor::keepParetoOptimal(std::vector<Journey> &journeys) {
                  journeys.end());
 }
 
+// Keeps only the Pareto-optimal journeys
 bool Raptor::dominates(const Journey &journey1, const Journey &journey2) {
   // If two journeys have the same number of steps, keep the one with the earliest arrival time
   // If a journey has more steps but not better arrival time, discard it

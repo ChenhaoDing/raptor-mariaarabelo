@@ -8,21 +8,21 @@
 #ifndef PARSE_H
 #define PARSE_H
 
-#include <fstream>
-#include <sstream>
-#include <iostream>
-#include <chrono>
+#include <fstream> // for file input
+#include <sstream> // for string stream
+#include <iostream> // for input and output
+#include <chrono> // for timing
 
-#include "Utils.h"
+#include "Utils.h" // for hash functions
 
-#include "NetworkObjects/GTFSObjects/GTFSObject.h"
-#include "NetworkObjects/DataStructures.h"
-#include "NetworkObjects/GTFSObjects/Agency.h"
-#include "NetworkObjects/GTFSObjects/Calendar.h"
-#include "NetworkObjects/GTFSObjects/Route.h"
-#include "NetworkObjects/GTFSObjects/Stop.h"
-#include "NetworkObjects/GTFSObjects/Trip.h"
-#include "NetworkObjects/GTFSObjects/StopTime.h"
+#include "NetworkObjects/GTFSObjects/GTFSObject.h" // for GTFSObject
+#include "NetworkObjects/DataStructures.h" // for DataStructures
+#include "NetworkObjects/GTFSObjects/Agency.h" // for Agency
+#include "NetworkObjects/GTFSObjects/Calendar.h" // for Calendar
+#include "NetworkObjects/GTFSObjects/Route.h" // for Route
+#include "NetworkObjects/GTFSObjects/Stop.h" // for Stop
+#include "NetworkObjects/GTFSObjects/Trip.h" // for Trip
+#include "NetworkObjects/GTFSObjects/StopTime.h" // for StopTime
 
 /**
  * @class Parser
