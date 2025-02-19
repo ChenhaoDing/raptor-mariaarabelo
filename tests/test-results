@@ -1,0 +1,953 @@
+Last login: Wed Feb 19 10:00:45 on ttys004
+/Users/dch/projects/sum/wp2/pt-router/src/raptor-mariaarabelo/build/tests/TESTS ; exit;
+dch@Chenhaos-MBP ~ % /Users/dch/projects/sum/wp2/pt-router/src/raptor-mariaarabelo/build/tests/TESTS ; exit;
+Running main() from /Users/dch/projects/sum/wp2/pt-router/src/raptor-mariaarabelo/tests/lib/googletest/src/gtest_main.cc
+[==========] Running 15 tests from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 15 tests from RaptorTests
+Parsing GTFS data from /Users/dch/projects/sum/wp2/pt-router/src/raptor-mariaarabelo/datasets/Porto/stcp/GTFS/...
+1 agencies, 6 calendars, 12950 trips, 142 routes, 2504 stops and 460555 stop times parsed. Data associated.
+Parsing GTFS data from /Users/dch/projects/sum/wp2/pt-router/src/raptor-mariaarabelo/datasets/Porto/metro/GTFS/...
+1 agencies, 19 calendars, 2939 trips, 14 routes, 85 stops and 64285 stop times parsed. Data associated.
+Raptor initialized with 2 agencies, 25 calendars, 2589 stops, 156 routes, 15889 trips and 524840 stop times.
+Initializing footpaths...
+Footpaths initialized in 650 ms (0 seconds).
+[ RUN      ] RaptorTests.ValidJourneyQuery
+Query from Salgueiros to Pólo Universitário departing 15/10/2024 (sunday) at 22:30:00
+
+
+Round 1
+
+Accumulated 2 routes serving stops.
+Traversed routes. 1 stop(s) improved.
+Handled footpaths. 4 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 1 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  22:31:00    5777    Salgueiros  00:02:00    5776         Pólo  22:33:00       DDF278  Metro
+
+
+Round 2
+
+Accumulated 3 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 0 stop(s) improved.
+[       OK ] RaptorTests.ValidJourneyQuery (8 ms)
+[ RUN      ] RaptorTests.from5777_toOTH2_day
+Query from Salgueiros to OUTEIRINHO departing 15/10/2024 (sunday) at 11:30:00
+
+
+Round 1
+
+Accumulated 2 routes serving stops.
+Traversed routes. 18 stop(s) improved.
+Handled footpaths. 2103 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 1 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  11:30:00    5777    Salgueiros  01:03:51    OTH2    OUTEIRINHO  12:33:51    footpath
+
+
+Round 2
+
+Accumulated 156 routes serving stops.
+Traversed routes. 646 stop(s) improved.
+Handled footpaths. 1235 stop(s) improved.
+
+Round 3
+
+Accumulated 152 routes serving stops.
+Traversed routes. 305 stop(s) improved.
+from OTH1 to OTH2 with duration 00:00:19 departing at 12:19:39 and arriving at 12:19:58
+Handled footpaths. 1152 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 5 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  11:36:00    5777    Salgueiros  00:06:00    5726      Trindade  11:42:00        DDF93  Metro
+
+    2 current  11:44:00    5726      Trindade  00:03:00    5697            24  11:47:00        BDF61  Metro
+
+    3 current  11:47:00    5697            24  00:00:07   C24A1         CAMPO  11:47:07    footpath
+
+    4 current  12:04:00   C24A1         CAMPO  00:15:39    OTH1    OUTEIRINHO  12:19:39   800_0_D_33Sociedade
+
+    5 current  12:19:39    OTH1    OUTEIRINHO  00:00:19    OTH2    OUTEIRINHO  12:19:58    footpath
+
+
+Round 4
+
+Accumulated 150 routes serving stops.
+Traversed routes. 105 stop(s) improved.
+Handled footpaths. 418 stop(s) improved.
+
+Round 5
+
+Accumulated 112 routes serving stops.
+Traversed routes. 2 stop(s) improved.
+from OTH1 to OTH2 with duration 00:00:19 departing at 12:05:39 and arriving at 12:05:58
+Handled footpaths. 71 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 5 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  11:36:00    5777    Salgueiros  00:06:00    5726      Trindade  11:42:00        DDF93  Metro
+
+    2 current  11:44:00    5726      Trindade  00:03:00    5697            24  11:47:00        BDF61  Metro
+
+    3 current  11:47:00    5697            24  00:01:00   C24A2         CAMPO  11:48:00    footpath
+
+    4 current  11:50:00   C24A2         CAMPO  00:15:39    OTH1    OUTEIRINHO  12:05:39    801_0_D_9Sociedade
+
+    5 current  12:05:39    OTH1    OUTEIRINHO  00:00:19    OTH2    OUTEIRINHO  12:05:58    footpath
+
+
+Round 6
+
+Accumulated 39 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 0 stop(s) improved.
+Discarded 1 journeys.
+[       OK ] RaptorTests.from5777_toOTH2_day (2169 ms)
+[ RUN      ] RaptorTests.fromELVG1_to5733
+Query from ELEVADOR GUINDAIS to Crestins departing 20/11/2024 (sunday) at 14:00:00
+
+
+Round 1
+
+Accumulated 5 routes serving stops.
+Traversed routes. 88 stop(s) improved.
+Handled footpaths. 2481 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 1 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  14:00:00   ELVG1      ELEVADOR  03:03:44    5733      Crestins  17:03:44    footpath
+
+
+Round 2
+
+Accumulated 156 routes serving stops.
+Traversed routes. 719 stop(s) improved.
+Handled footpaths. 809 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 3 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  14:00:00   ELVG1      ELEVADOR  00:05:27    5778          São  14:05:27    footpath
+
+    2 current  14:10:00    5778          São  00:02:00    5726      Trindade  14:12:00       DDF246  Metro
+
+    3 current  14:27:00    5726      Trindade  00:22:00    5733      Crestins  14:49:00        EDF94  Metro
+
+
+Round 3
+
+Accumulated 151 routes serving stops.
+Traversed routes. 74 stop(s) improved.
+from OTH1 to 5733 with duration 03:44:58 departing at 14:33:39 and arriving at 18:18:37
+Handled footpaths. 711 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 3 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  14:00:00   ELVG1      ELEVADOR  00:05:27    5778          São  14:05:27    footpath
+
+    2 current  14:10:00    5778          São  00:02:00    5726      Trindade  14:12:00       DDF246  Metro
+
+    3 current  14:13:00    5726      Trindade  00:23:00    5733      Crestins  14:36:00        EDF14  Metro
+
+
+Round 4
+
+Accumulated 150 routes serving stops.
+Traversed routes. 64 stop(s) improved.
+Handled footpaths. 226 stop(s) improved.
+
+Round 5
+
+Accumulated 85 routes serving stops.
+Traversed routes. 25 stop(s) improved.
+Handled footpaths. 166 stop(s) improved.
+
+Round 6
+
+Accumulated 99 routes serving stops.
+Traversed routes. 1 stop(s) improved.
+Handled footpaths. 48 stop(s) improved.
+
+Round 7
+
+Accumulated 39 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 0 stop(s) improved.
+Discarded 1 journeys.
+[       OK ] RaptorTests.fromELVG1_to5733 (2698 ms)
+[ RUN      ] RaptorTests.fromMAIA3_toPARR3
+Query from MAIA (CÂMARA) to PONTE ARRÁBIDA departing 15/10/2024 (sunday) at 05:55:00
+
+
+Round 1
+
+Accumulated 2 routes serving stops.
+Traversed routes. 11 stop(s) improved.
+Handled footpaths. 2564 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 1 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  05:55:00   MAIA3          MAIA  02:18:08   PARR3         PONTE  08:13:08    footpath
+
+
+Round 2
+
+Accumulated 156 routes serving stops.
+Traversed routes. 620 stop(s) improved.
+Handled footpaths. 628 stop(s) improved.
+
+Round 3
+
+Accumulated 144 routes serving stops.
+Traversed routes. 575 stop(s) improved.
+Handled footpaths. 1856 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 3 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  05:55:00   MAIA3          MAIA  00:06:33    5760        Fórum  06:01:33    footpath
+
+    2 current  06:11:00    5760        Fórum  00:25:00    5711       Francos  06:36:00        CDF38  Metro
+
+    3 current  06:36:00    5711       Francos  00:29:04   PARR3         PONTE  07:05:04    footpath
+
+
+Round 4
+
+Accumulated 152 routes serving stops.
+Traversed routes. 251 stop(s) improved.
+Handled footpaths. 449 stop(s) improved.
+
+Round 5
+
+Accumulated 132 routes serving stops.
+Traversed routes. 45 stop(s) improved.
+from OTH1 to PARR3 with duration 02:25:33 departing at 06:59:48 and arriving at 09:25:21
+Handled footpaths. 610 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 7 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  05:55:00   MAIA3          MAIA  00:06:33    5760        Fórum  06:01:33    footpath
+
+    2 current  06:11:00    5760        Fórum  00:25:00    5711       Francos  06:36:00        CDF38  Metro
+
+    3 current  06:36:00    5711       Francos  00:02:27    SDP2      SIDÓNIO  06:38:27    footpath
+
+    4 current  06:39:34    SDP2      SIDÓNIO  00:02:46    1BS2      BOAVISTA  06:42:20    601_1_D_2Sociedade
+
+    5 current  06:42:20    1BS2      BOAVISTA  00:01:07     BS9      BOAVISTA  06:43:27    footpath
+
+    6 current  06:50:00     BS9      BOAVISTA  00:06:01     NOC           NÓ  06:56:01   907_0_D_37Sociedade
+
+    7 current  06:56:01     NOC           NÓ  00:05:33   PARR3         PONTE  07:01:34    footpath
+
+
+Round 6
+
+Accumulated 147 routes serving stops.
+Traversed routes. 14 stop(s) improved.
+Handled footpaths. 48 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 6 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  05:55:00   MAIA3          MAIA  00:06:33    5760        Fórum  06:01:33    footpath
+
+    2 current  06:11:00    5760        Fórum  00:27:00    5706          Casa  06:38:00        CDF38  Metro
+
+    3 current  06:38:00    5706          Casa  00:03:05    CMS2          CASA  06:41:05    footpath
+
+    4 current  06:45:00    CMS2          CASA  00:03:50     JM1         JUNTA  06:48:50   903_0_D_45Sociedade
+
+    5 current  06:50:54     JM1         JUNTA  00:02:22   FCUP1     FACULDADE  06:53:16    200_0_D_1Sociedade
+
+    6 current  06:53:16   FCUP1     FACULDADE  00:07:31   PARR3         PONTE  07:00:47    footpath
+
+
+Round 7
+
+Accumulated 46 routes serving stops.
+Traversed routes. 3 stop(s) improved.
+Handled footpaths. 38 stop(s) improved.
+
+Round 8
+
+Accumulated 30 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 0 stop(s) improved.
+Discarded 1 journeys.
+[       OK ] RaptorTests.fromMAIA3_toPARR3 (3533 ms)
+[ RUN      ] RaptorTests.fromSAL2_toIPO5
+Query from SALGUEIROS to IPO (CIRCUNVAL.) departing 11/12/2024 (sunday) at 14:00:00
+
+
+Round 1
+
+Accumulated 1 routes serving stops.
+Traversed routes. 32 stop(s) improved.
+Handled footpaths. 2546 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 1 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  14:00:00    SAL2    SALGUEIROS  00:27:58    IPO5           IPO  14:27:58    footpath
+
+
+Round 2
+
+Accumulated 156 routes serving stops.
+Traversed routes. 65 stop(s) improved.
+Handled footpaths. 66 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 2 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  14:00:00    SAL2    SALGUEIROS  00:19:39   HSJ12         HOSP.  14:19:39    footpath
+
+    2 current  14:20:00   HSJ12         HOSP.  00:01:13    IPO5           IPO  14:21:13   205_0_D_10Sociedade
+
+
+Round 3
+
+Accumulated 51 routes serving stops.
+Traversed routes. 8 stop(s) improved.
+Handled footpaths. 203 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 3 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  14:00:00    SAL2    SALGUEIROS  00:00:59    5777    Salgueiros  14:00:59    footpath
+
+    2 current  14:03:00    5777    Salgueiros  00:05:00    5772           IPO  14:08:00       DDF245  Metro
+
+    3 current  14:08:00    5772           IPO  00:05:52    IPO5           IPO  14:13:52    footpath
+
+
+Round 4
+
+Accumulated 128 routes serving stops.
+Traversed routes. 2 stop(s) improved.
+Handled footpaths. 2 stop(s) improved.
+
+Round 5
+
+Accumulated 8 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 1 stop(s) improved.
+
+Round 6
+
+Accumulated 4 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 0 stop(s) improved.
+[       OK ] RaptorTests.fromSAL2_toIPO5 (1965 ms)
+[ RUN      ] RaptorTests.from5726_to5739
+Query from Trindade to Lidador departing 15/10/2024 (sunday) at 06:44:00
+
+
+Round 1
+
+Accumulated 14 routes serving stops.
+Traversed routes. 69 stop(s) improved.
+Handled footpaths. 848 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 1 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  07:18:00    5726      Trindade  00:27:00    5739       Lidador  07:45:00         BDF2  Metro
+
+
+Round 2
+
+Accumulated 154 routes serving stops.
+Traversed routes. 648 stop(s) improved.
+Handled footpaths. 1813 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 2 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  06:49:00    5726      Trindade  00:25:00    5783        Botica  07:14:00        EDF79  Metro
+
+    2 current  07:14:00    5783        Botica  00:26:58    5739       Lidador  07:40:58    footpath
+
+
+Round 3
+
+Accumulated 148 routes serving stops.
+Traversed routes. 287 stop(s) improved.
+from OTH1 to 5739 with duration 04:29:25 departing at 07:10:48 and arriving at 11:40:13
+Handled footpaths. 1297 stop(s) improved.
+
+Round 4
+
+Accumulated 144 routes serving stops.
+Traversed routes. 25 stop(s) improved.
+Handled footpaths. 420 stop(s) improved.
+
+Round 5
+
+Accumulated 109 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 35 stop(s) improved.
+
+Round 6
+
+Accumulated 22 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 0 stop(s) improved.
+Discarded 1 journeys.
+[       OK ] RaptorTests.from5726_to5739 (1413 ms)
+[ RUN      ] RaptorTests.from5746_to5756
+Query from Póvoa de Varzim to Castêlo da Maia departing 5/5/2024 (sunday) at 05:05:00
+
+
+Round 1
+
+Accumulated 4 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 234 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 1 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  05:05:00    5746        Póvoa  05:41:37    5756      Castêlo  10:46:37    footpath
+
+
+Round 2
+
+Accumulated 36 routes serving stops.
+Traversed routes. 101 stop(s) improved.
+Handled footpaths. 101 stop(s) improved.
+
+Round 3
+
+Accumulated 27 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 297 stop(s) improved.
+
+Round 4
+
+Accumulated 80 routes serving stops.
+Traversed routes. 33 stop(s) improved.
+Handled footpaths. 33 stop(s) improved.
+
+Round 5
+
+Accumulated 16 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 43 stop(s) improved.
+
+Round 6
+
+Accumulated 30 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 0 stop(s) improved.
+[       OK ] RaptorTests.from5746_to5756 (303 ms)
+[ RUN      ] RaptorTests.From5753To5782
+Query from Vilar do Pinheiro to Aeroporto departing 15/10/2024 (sunday) at 19:44:00
+
+
+Round 1
+
+Accumulated 2 routes serving stops.
+Traversed routes. 35 stop(s) improved.
+Handled footpaths. 64 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 1 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  19:44:00    5753         Vilar  00:57:40    5782     Aeroporto  20:41:40    footpath
+
+
+Round 2
+
+Accumulated 22 routes serving stops.
+Traversed routes. 32 stop(s) improved.
+Handled footpaths. 51 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 2 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  19:56:00    5753         Vilar  00:06:00    5750        Verdes  20:02:00        BDF87  Metro
+
+    2 current  20:05:00    5750        Verdes  00:04:00    5782     Aeroporto  20:09:00        EDF25  Metro
+
+
+Round 3
+
+Accumulated 14 routes serving stops.
+Traversed routes. 7 stop(s) improved.
+Handled footpaths. 7 stop(s) improved.
+
+Round 4
+
+Accumulated 8 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 9 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 4 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  19:56:00    5753         Vilar  00:02:00    5739       Lidador  19:58:00        BDF87  Metro
+
+    2 current  19:58:00    5739       Lidador  00:01:49   LIDM1       LIDADOR  19:59:49    footpath
+
+    3 current  20:00:52   LIDM1       LIDADOR  00:04:08   AEPT1     AEROPORTO  20:05:00   602_0_D_49Sociedade
+
+    4 current  20:05:00   AEPT1     AEROPORTO  00:01:26    5782     Aeroporto  20:06:26    footpath
+
+
+Round 5
+
+Accumulated 6 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 0 stop(s) improved.
+[       OK ] RaptorTests.From5753To5782 (151 ms)
+[ RUN      ] RaptorTests.From5775To5813
+Query from Marquês to Vila d'Este departing 11/11/2024 (sunday) at 11:11:00
+
+
+Round 1
+
+Accumulated 2 routes serving stops.
+Traversed routes. 15 stop(s) improved.
+Handled footpaths. 2453 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 1 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  11:11:00    5775      Marquês  01:43:50    5813          Vila  12:54:50    footpath
+
+
+Round 2
+
+Accumulated 156 routes serving stops.
+Traversed routes. 844 stop(s) improved.
+Handled footpaths. 1581 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 2 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  11:16:00    5775      Marquês  00:17:00    5792         Santo  11:33:00       DDF163  Metro
+
+    2 current  11:33:00    5792         Santo  00:46:11    5813          Vila  12:19:11    footpath
+
+
+Round 3
+
+Accumulated 155 routes serving stops.
+Traversed routes. 309 stop(s) improved.
+from OTH1 to 5813 with duration 02:22:03 departing at 11:49:39 and arriving at 14:11:42
+Handled footpaths. 1367 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 3 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  11:16:00    5775      Marquês  00:17:00    5792         Santo  11:33:00       DDF163  Metro
+
+    2 current  11:33:00    5792         Santo  00:15:18    5812        Manuel  11:48:18    footpath
+
+    3 current  11:58:00    5812        Manuel  00:05:00    5813          Vila  12:03:00        DDF93  Metro
+
+
+Round 4
+
+Accumulated 143 routes serving stops.
+Traversed routes. 211 stop(s) improved.
+Handled footpaths. 470 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 4 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  11:16:00    5775      Marquês  00:17:00    5792         Santo  11:33:00       DDF163  Metro
+
+    2 current  11:33:00    5792         Santo  00:00:49     SO1          S.TO  11:33:49    footpath
+
+    3 current  11:35:00     SO1          S.TO  00:09:08    MIM1       MIMOSAS  11:44:08    907_0_D_6Sociedade
+
+    4 current  11:44:08    MIM1       MIMOSAS  00:00:54    5813          Vila  11:45:02    footpath
+
+
+Round 5
+
+Accumulated 121 routes serving stops.
+Traversed routes. 3 stop(s) improved.
+Handled footpaths. 174 stop(s) improved.
+
+Round 6
+
+Accumulated 87 routes serving stops.
+Traversed routes. 4 stop(s) improved.
+Handled footpaths. 8 stop(s) improved.
+
+Round 7
+
+Accumulated 16 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 6 stop(s) improved.
+
+Round 8
+
+Accumulated 3 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 0 stop(s) improved.
+[       OK ] RaptorTests.From5775To5813 (2544 ms)
+[ RUN      ] RaptorTests.from5777_toOTH2_later
+Query from Salgueiros to OUTEIRINHO departing 15/10/2024 (sunday) at 22:30:00
+
+
+Round 1
+
+Accumulated 2 routes serving stops.
+Traversed routes. 18 stop(s) improved.
+Handled footpaths. 2103 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 1 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  22:30:00    5777    Salgueiros  01:03:51    OTH2    OUTEIRINHO  23:33:51    footpath
+
+
+Round 2
+
+Accumulated 156 routes serving stops.
+Traversed routes. 452 stop(s) improved.
+Handled footpaths. 1321 stop(s) improved.
+
+Round 3
+
+Accumulated 152 routes serving stops.
+Traversed routes. 290 stop(s) improved.
+from OTH1 to OTH2 with duration 00:00:19 departing at 23:26:13 and arriving at 23:26:32
+Handled footpaths. 1471 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 5 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  22:31:00    5777    Salgueiros  00:06:00    5726      Trindade  22:37:00       DDF135  Metro
+
+    2 current  22:41:00    5726      Trindade  00:03:00    5697            24  22:44:00        BDF92  Metro
+
+    3 current  22:44:00    5697            24  00:01:00   C24A2         CAMPO  22:45:00    footpath
+
+    4 current  23:02:30   C24A2         CAMPO  00:13:39    CVN1        CAVADA  23:16:09   700_0_D_40Sociedade
+
+    5 current  23:16:09    CVN1        CAVADA  00:08:39    OTH2    OUTEIRINHO  23:24:48    footpath
+
+
+Round 4
+
+Accumulated 144 routes serving stops.
+Traversed routes. 151 stop(s) improved.
+from OTH1 to OTH2 with duration 00:00:19 departing at 23:02:13 and arriving at 23:02:32
+Handled footpaths. 627 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 4 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  22:31:00    5777    Salgueiros  00:06:00    5726      Trindade  22:37:00       DDF135  Metro
+
+    2 current  22:37:00    5726      Trindade  00:04:48   BLRB4       BOLHÃO  22:41:48    footpath
+
+    3 current  22:45:00   BLRB4       BOLHÃO  00:17:13    OTH1    OUTEIRINHO  23:02:13   800_0_D_23Sociedade
+
+    4 current  23:02:13    OTH1    OUTEIRINHO  00:00:19    OTH2    OUTEIRINHO  23:02:32    footpath
+
+
+Round 5
+
+Accumulated 124 routes serving stops.
+Traversed routes. 3 stop(s) improved.
+Handled footpaths. 45 stop(s) improved.
+
+Round 6
+
+Accumulated 24 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 1 stop(s) improved.
+
+Round 7
+
+Accumulated 1 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 0 stop(s) improved.
+Discarded 1 journeys.
+[       OK ] RaptorTests.from5777_toOTH2_later (2169 ms)
+[ RUN      ] RaptorTests.from5777_toOTH2_night
+Query from Salgueiros to OUTEIRINHO departing 15/10/2024 (sunday) at 23:35:00
+
+
+Round 1
+
+Accumulated 2 routes serving stops.
+Traversed routes. 15 stop(s) improved.
+Handled footpaths. 2102 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 1 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1    next  23:35:00    5777    Salgueiros  01:03:51    OTH2    OUTEIRINHO  00:38:51    footpath
+
+
+Round 2
+
+Accumulated 156 routes serving stops.
+Traversed routes. 268 stop(s) improved.
+Handled footpaths. 967 stop(s) improved.
+
+Round 3
+
+Accumulated 154 routes serving stops.
+Traversed routes. 192 stop(s) improved.
+from OTH1 to OTH2 with duration 00:00:19 departing at 00:37:13 and arriving at 00:37:32
+Handled footpaths. 1279 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 3 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  23:35:00    5777    Salgueiros  00:19:15    CPL1         CAMPO  23:54:15    footpath
+
+    2    next  23:55:39    CPL1         CAMPO  00:27:49    CVN1        CAVADA  00:23:28   803_0_D_19Sociedade
+
+    3    next  00:23:28    CVN1        CAVADA  00:08:39    OTH2    OUTEIRINHO  00:32:07    footpath
+
+
+Round 4
+
+Accumulated 147 routes serving stops.
+Traversed routes. 1 stop(s) improved.
+from OTH1 to OTH2 with duration 00:00:19 departing at 00:11:13 and arriving at 00:11:32
+Handled footpaths. 325 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 4 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  23:41:00    5777    Salgueiros  00:08:00    5766       Aliados  23:49:00       DDF210  Metro
+
+    2 current  23:49:00    5766       Aliados  00:01:58    1AL6    AV.ALIADOS  23:50:58    footpath
+
+    3    next  23:53:45    1AL6    AV.ALIADOS  00:17:28    OTH1    OUTEIRINHO  00:11:13   801_0_D_48Sociedade
+
+    4    next  00:11:13    OTH1    OUTEIRINHO  00:00:19    OTH2    OUTEIRINHO  00:11:32    footpath
+
+
+Round 5
+
+Accumulated 100 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 1 stop(s) improved.
+
+Round 6
+
+Accumulated 2 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 0 stop(s) improved.
+[       OK ] RaptorTests.from5777_toOTH2_night (1050 ms)
+[ RUN      ] RaptorTests.MultiDayJourney
+Query from TV.CRUZES to S. CAETANO departing 9/12/2024 (sunday) at 23:40:00
+
+
+Round 1
+
+Accumulated 1 routes serving stops.
+Traversed routes. 6 stop(s) improved.
+Handled footpaths. 99 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 1 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1    next  23:40:00   TCRZ2     TV.CRUZES  00:23:03    SCT2            S.  00:03:03    footpath
+
+
+Round 2
+
+Accumulated 28 routes serving stops.
+Traversed routes. 7 stop(s) improved.
+Handled footpaths. 7 stop(s) improved.
+
+Round 3
+
+Accumulated 7 routes serving stops.
+Traversed routes. 1 stop(s) improved.
+Handled footpaths. 23 stop(s) improved.
+
+Round 4
+
+Accumulated 19 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 0 stop(s) improved.
+[       OK ] RaptorTests.MultiDayJourney (24 ms)
+[ RUN      ] RaptorTests.SameStartAndEndStop
+Query from Salgueiros to Salgueiros departing 10/12/2024 (sunday) at 09:00:00
+
+
+Round 1
+
+Accumulated 0 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 0 stop(s) improved.
+[       OK ] RaptorTests.SameStartAndEndStop (6 ms)
+[ RUN      ] RaptorTests.JourneySpanningWeekend
+Query from TV.SIMÕES LOPES to LGO. EÇA QUEIRÓS departing 13/12/2024 (sunday) at 23:00:00
+
+
+Round 1
+
+Accumulated 2 routes serving stops.
+Traversed routes. 45 stop(s) improved.
+Handled footpaths. 2406 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 1 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1    next  23:00:00    TSL2    TV.SIMÕES  03:48:15   LGEQ1          LGO.  02:48:15    footpath
+
+
+Round 2
+
+Accumulated 156 routes serving stops.
+Traversed routes. 47 stop(s) improved.
+Handled footpaths. 47 stop(s) improved.
+
+Round 3
+
+Accumulated 22 routes serving stops.
+Traversed routes. 23 stop(s) improved.
+Handled footpaths. 1806 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 3 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  23:00:00    TSL2    TV.SIMÕES  00:06:14    TVG4      TRAVAGEM  23:06:14    footpath
+
+    2 current  23:10:00    TVG4      TRAVAGEM  00:30:00   BLRB3       BOLHÃO  23:40:00   702_1_D_25Sociedade
+
+    3    next  23:40:00   BLRB3       BOLHÃO  00:56:10   LGEQ1          LGO.  00:36:10    footpath
+
+
+Round 4
+
+Accumulated 155 routes serving stops.
+Traversed routes. 391 stop(s) improved.
+Handled footpaths. 391 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 4 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  23:00:00    TSL2    TV.SIMÕES  00:06:14    TVG4      TRAVAGEM  23:06:14    footpath
+
+    2 current  23:10:00    TVG4      TRAVAGEM  00:30:00   BLRB3       BOLHÃO  23:40:00   702_1_D_25Sociedade
+
+    3 current  23:40:00   BLRB3       BOLHÃO  00:03:13    TRD4      TRINDADE  23:43:13    footpath
+
+    4    next  00:15:00    TRD4      TRINDADE  00:15:38   LGEQ1          LGO.  00:30:38   906_0_D_46Sociedade
+
+
+Round 5
+
+Accumulated 124 routes serving stops.
+Traversed routes. 28 stop(s) improved.
+from OTH1 to LGEQ1 with duration 02:32:50 departing at 00:11:13 and arriving at 02:44:03
+Handled footpaths. 1332 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 7 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  23:00:00    TSL2    TV.SIMÕES  00:06:14    TVG4      TRAVAGEM  23:06:14    footpath
+
+    2 current  23:10:00    TVG4      TRAVAGEM  00:22:41   PLIM2         PIRES  23:32:41   702_1_D_25Sociedade
+
+    3 current  23:32:41   PLIM2         PIRES  00:06:37    5777    Salgueiros  23:39:18    footpath
+
+    4 current  23:41:00    5777    Salgueiros  00:09:00    5778          São  23:50:00       DDF210  Metro
+
+    5 current  23:50:00    5778          São  00:00:08   1SBNT       S.BENTO  23:50:08    footpath
+
+    6    next  00:00:00   1SBNT       S.BENTO  00:07:00    MCE1         MUSEU  00:07:00   500_0_D_97Sociedade
+
+    7    next  00:07:00    MCE1         MUSEU  00:17:10   LGEQ1          LGO.  00:24:10    footpath
+
+
+Round 6
+
+Accumulated 147 routes serving stops.
+Traversed routes. 85 stop(s) improved.
+Handled footpaths. 91 stop(s) improved.
+
+Round 7
+
+Accumulated 40 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+from OTH1 to LGEQ1 with duration 02:32:50 departing at 23:47:13 and arriving at 02:20:03
+Handled footpaths. 238 stop(s) improved.
+
+Round 8
+
+Accumulated 85 routes serving stops.
+Traversed routes. 1 stop(s) improved.
+Handled footpaths. 1 stop(s) improved.
+
+Round 9
+
+Accumulated 12 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 2 stop(s) improved.
+
+Round 10
+
+Accumulated 7 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 0 stop(s) improved.
+[       OK ] RaptorTests.JourneySpanningWeekend (1535 ms)
+[ RUN      ] RaptorTests.from5717_toPREC2
+Query from Nasoni to PRECIOSA departing 20/10/2024 (sunday) at 20:20:00
+
+
+Round 1
+
+Accumulated 2 routes serving stops.
+Traversed routes. 23 stop(s) improved.
+Handled footpaths. 2398 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 1 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  20:20:00    5717        Nasoni  01:55:19   PREC2      PRECIOSA  22:15:19    footpath
+
+
+Round 2
+
+Accumulated 156 routes serving stops.
+Traversed routes. 353 stop(s) improved.
+Handled footpaths. 868 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 2 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  20:21:00    5717        Nasoni  00:22:00    5729          Viso  20:43:00        FDF33  Metro
+
+    2 current  20:43:00    5729          Viso  00:14:32   PREC2      PRECIOSA  20:57:32    footpath
+
+
+Round 3
+
+Accumulated 149 routes serving stops.
+Traversed routes. 159 stop(s) improved.
+from OTH1 to PREC2 with duration 02:31:47 departing at 20:53:39 and arriving at 23:25:26
+Handled footpaths. 534 stop(s) improved.
+
+Round 4
+
+Accumulated 140 routes serving stops.
+Traversed routes. 37 stop(s) improved.
+from OTH1 to PREC2 with duration 02:31:47 departing at 20:36:39 and arriving at 23:08:26
+Handled footpaths. 325 stop(s) improved.
+Target improved! Reconstructing journey...
+Found journey with 4 step(s).
+ step     day dep_time    stop         (name) duration -> stop         (name)arr_time          trip  agency
+    1 current  20:21:00    5717        Nasoni  00:17:00    5706          Casa  20:38:00        FDF33  Metro
+
+    2 current  20:38:00    5706          Casa  00:01:57    BCM3 BOAVISTA-CASA  20:39:57    footpath
+
+    3 current  20:44:00    BCM3 BOAVISTA-CASA  00:08:14    CONT    CONTINENTE  20:52:14   507_0_D_42Sociedade
+
+    4 current  20:52:14    CONT    CONTINENTE  00:02:52   PREC2      PRECIOSA  20:55:06    footpath
+
+
+Round 5
+
+Accumulated 112 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 72 stop(s) improved.
+
+Round 6
+
+Accumulated 64 routes serving stops.
+Traversed routes. 0 stop(s) improved.
+Handled footpaths. 0 stop(s) improved.
+[       OK ] RaptorTests.from5717_toPREC2 (2267 ms)
+[----------] 15 tests from RaptorTests (21842 ms total)
+
+[----------] Global test environment tear-down
+[==========] 15 tests from 1 test suite ran. (26942 ms total)
+[  PASSED  ] 15 tests.
+
+Saving session...
+...copying shared history...
+...saving history...truncating history files...
+...completed.
